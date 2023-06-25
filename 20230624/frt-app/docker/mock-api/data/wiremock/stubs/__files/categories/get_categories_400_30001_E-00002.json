@@ -1,0 +1,18 @@
+{
+  "status_code": "E-00002",
+  "message": "クライアント入力値の検査エラーが発生しました。",
+  "error_details": [
+    {
+      "error_key": "target_code",
+      "error_reason": "不正なカテゴリコードが指定されています。",
+      "error_reason_substitute": [],
+      "error_reason_code": "1002030",
+      "error_front_message": "（フロントエラーメッセージ）"
+    }
+  ],
+  "data": [],
+  "notice_details": [],
+  "total_data_num": 0,
+  "current_page_num": 0,
+  "total_page_num": 0
+}

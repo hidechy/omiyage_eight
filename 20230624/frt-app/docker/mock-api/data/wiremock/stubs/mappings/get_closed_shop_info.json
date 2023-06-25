@@ -1,0 +1,16 @@
+{
+  "request" : {
+    "method": "GET",
+    "urlPath": "/settings/info/closed_shop_info.json"
+  },
+  "response": {
+    "status": 200,
+    "bodyFileName": "json/closed_shop_info.json",
+    "headers": {
+      "Content-Type": "application/json; charset=UTF-8"
+    },
+    "transformers": [
+      "response-template"
+    ]
+  }
+}

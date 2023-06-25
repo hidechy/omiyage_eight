@@ -1,0 +1,16 @@
+{
+  "status_code": "N-00001",
+  "message": "正常終了しました。",
+  "error_details": [],
+  "data": [
+    {
+      "is_deliverable": true,
+      "shop_code": "{{#if (matches request.query.postal_number '1350042')}}00209{{else if (matches request.query.postal_number '1160013')}}00210{{else}}00211{{/if}}"
+    }
+  ],
+  "notice_details": [],
+  "total_data_num": 1,
+  "current_page_num": 1,
+  "total_page_num": 1,
+  "front_message": "（フロントメッセージ）"
+}

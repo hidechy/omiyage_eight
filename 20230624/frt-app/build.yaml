@@ -1,0 +1,25 @@
+targets:
+  $default:
+    builders:
+      freezed:
+        generate_for:
+          include:
+            - lib/data/api/model/*.dart
+            - lib/data/shared_preferences/model/*.dart
+            - lib/ui/state/*.dart
+      json_serializable:
+        generate_for:
+          include:
+            - lib/data/api/model/*.dart
+            - lib/data/shared_preferences/model/*.dart
+        options:
+          any_map: false
+          checked: false
+          create_factory: true
+          create_to_json: true
+          disallow_unrecognized_keys: false
+          explicit_to_json: true
+          field_rename: snake
+          generic_argument_factories: false
+          ignore_unannotated: false
+          include_if_null: true

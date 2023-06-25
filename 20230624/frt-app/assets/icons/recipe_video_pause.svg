@@ -1,0 +1,11 @@
+<svg id="APP_icon_一時停止28" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="28" viewBox="0 0 28 28">
+    <defs>
+        <clipPath id="clip-path">
+            <rect id="長方形_2438" width="28" height="28" fill="none" />
+        </clipPath>
+    </defs>
+    <g id="グループ_5666" clip-path="url(#clip-path)">
+        <path id="パス_905" d="M16.9,6a2.625,2.625,0,0,0-2.625,2.625v17.5a2.625,2.625,0,0,0,5.25,0V8.625A2.625,2.625,0,0,0,16.9,6" transform="translate(-8.031 -3.375)" fill="#fff" />
+        <path id="パス_906" d="M40.348,6a2.625,2.625,0,0,0-2.625,2.625v17.5a2.625,2.625,0,0,0,5.25,0V8.625A2.625,2.625,0,0,0,40.348,6" transform="translate(-21.219 -3.375)" fill="#fff" />
+    </g>
+</svg>

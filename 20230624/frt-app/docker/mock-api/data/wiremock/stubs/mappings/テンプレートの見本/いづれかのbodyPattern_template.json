@@ -1,0 +1,19 @@
+{
+  "request": {
+    "method": "POST",
+    "urlPath": "/test/body/param",
+    "bodyPatterns" : [
+      { "matchesJsonPath" : "[?(@.result =~ /[0-9]{1}/)]"}
+    ]
+  },
+  "response": {
+    "status": 200,
+    "bodyFileName": "ボディーファイルの見本/bodyPatternのdataが{{jsonPath request.body '$.result'}}の場合.json",
+    "headers": {
+      "Content-Type": "application/json; charset=UTF-8"
+    },
+    "transformers": [
+      "response-template"
+    ]
+  }
+}

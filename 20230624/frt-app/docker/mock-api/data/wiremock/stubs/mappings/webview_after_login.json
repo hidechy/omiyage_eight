@@ -1,0 +1,17 @@
+{
+  "request": {
+    "method": "POST",
+    "urlPath": "/nds/app/after-login/"
+  },
+  "response": {
+    "status": 200,
+    "bodyFileName": "webview/after_login.html",
+    "headers": {
+      "Content-Type": "text/html; charset=UTF-8",
+      "Set-Cookie": ["x-iyns-sso-state-token={{randomValue type='UUID'}}; Path=/", "state={{randomValue length=16 type='ALPHANUMERIC' uppercase=false}}; Path=/"]
+    },
+    "transformers": [
+      "response-template"
+    ]
+  }
+}

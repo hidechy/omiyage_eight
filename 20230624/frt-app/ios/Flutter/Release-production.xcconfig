@@ -1,0 +1,7 @@
+#include "Generated.xcconfig"
+#include "Release.xcconfig"
+TRACK_WIDGET_CREATION=
+
+FLUTTER_FLAVOR=production
+PRODUCT_BUNDLE_IDENTIFIER=jp.itoyokado.netsuper
+BUNDLE_NAME=ネットスーパー

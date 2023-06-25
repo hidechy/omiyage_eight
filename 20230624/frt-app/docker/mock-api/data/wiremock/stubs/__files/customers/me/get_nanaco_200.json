@@ -1,0 +1,15 @@
+{
+  "status_code": "N-00001",
+  "message": "正常終了しました。",
+  "front_message": "（フロントメッセージ）",
+  "error_details": [],
+  "data": [
+    {
+      "nanaco_point": 12345
+    }
+  ],
+  "total_data_num": 1,
+  "current_page_num": 1,
+  "total_page_num": 1,
+  "notice_details": []
+}

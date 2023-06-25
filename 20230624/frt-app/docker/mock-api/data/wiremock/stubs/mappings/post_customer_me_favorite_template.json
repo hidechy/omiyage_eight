@@ -1,0 +1,25 @@
+{
+  "request": {
+    "method": "POST",
+    "urlPath": "/customers/me/favorites",
+    "bodyPatterns": [
+      {
+        "matchesJsonPath": "[?(@.product_id =~ /^[0-9]{1,13}$/)]"
+      },
+      {
+        "matchesJsonPath": "[?(@.cart_id =~ /^[1-9][0-9]{1,7}$/)]"
+      }
+    ]
+  },
+  "response": {
+    "status": 200,
+    "bodyFileName": "favorite/post_customer_me_favorite_200_normal.json",
+    "headers": {
+      "Content-Type": "application/json; charset=UTF-8",
+      "Set-Cookie":"X-IYNS-LOGIN-TOKEN=wiremock-test"
+    },
+    "transformers": [
+      "response-template"
+    ]
+  }
+}

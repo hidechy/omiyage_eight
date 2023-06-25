@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>動作確認用ページ</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=2">
+  </head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FJK5J3G7P1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+
+    function buttonClick(){
+      // WebView判定
+      if(typeof app_event_log === "undefined") {
+        function gtag() {dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('event','button',{'button': "WebviewTest"});
+      }else{
+        app_event_log.postMessage("AppTest");
+      }
+    }
+
+    gtag('config', 'G-FJK5J3G7P1', {
+      // config時にpageviewを送らない設定
+      send_page_view: false
+    });
+
+    if (typeof app_screen_view === "undefined") {
+      gtag('event','page_view',{
+        page_title: document.title,
+        page_location: location.href,
+        page_path: location.pathname,
+      });
+    } else {
+      app_screen_view.postMessage(document.title);
+    }
+  </script>
+  <body>
+    <p style="font-size: 40px;">テスト</p>
+    <br>
+    <form name="form">
+      <input type="button" value="button" onclick="buttonClick()">
+    </form>
+  </body>
+</html>

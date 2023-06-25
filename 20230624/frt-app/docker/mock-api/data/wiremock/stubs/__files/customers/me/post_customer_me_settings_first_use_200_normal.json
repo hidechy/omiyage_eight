@@ -1,0 +1,32 @@
+{
+    "status_code": "N-00001",
+    "message": "正常終了しました。",
+    "error_details": [],
+    "data": [
+        {
+            "deal_coupons": [
+                {
+                    "use_delivery_start_datetime": "2023-03-12T19:00:00+09:00",
+                    "coupon_name": "サンプル獲得クーポン",
+                    "coupon_code": "ONM5F",
+                    "is_limited_use_one_day": true,
+                    "use_delivery_finish_datetime": "2023-03-14T19:00:00+09:00",
+                    "coupon_use_remaining_number": "2回",
+                    "coupon_guide": "クーポン注意事項"
+                }
+            ],
+            "is_can_not_buy_product": true,
+            "can_not_buy_product_names": [
+                "サントリー　チューハイ トリスハイボール　350ml",
+                "サントリー　チューハイ トリスハイボール　350ml",
+                "サントリー　チューハイ トリスハイボール　350ml",
+                "サントリー　チューハイ トリスハイボール　350ml"
+            ]
+        }
+    ],
+    "notice_details": [],
+    "total_data_num": 1,
+    "current_page_num": 1,
+    "total_page_num": 1,
+    "front_message": "（フロントメッセージ）"
+}

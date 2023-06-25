@@ -1,0 +1,16 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPattern": "/delivery/receipt_locations"
+  },
+  "response": {
+    "status": 200,
+    "bodyFileName": "delivery/get_delivery_receipt_locations_200_normal.json",
+    "headers": {
+      "Content-Type": "application/json; charset=UTF-8"
+    },
+    "transformers": [
+      "response-template"
+    ]
+  }
+}

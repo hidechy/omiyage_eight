@@ -1,0 +1,22 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPath": "/carts",
+    "queryParameters": {
+      "cart_id": {
+        "matches": "^[0-9]{8}$"
+      }
+    }
+  },
+  "response": {
+    "status": 200,
+    "bodyFileName": "cart/get_cart_200_normal.json",
+    "headers": {
+      "Content-Type": "application/json; charset=UTF-8",
+      "Set-Cookie":"X-IYNS-LOGIN-TOKEN=wiremock-test"
+    },
+    "transformers": [
+      "response-template"
+    ]
+  }
+}

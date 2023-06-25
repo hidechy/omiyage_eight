@@ -1,0 +1,16 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/front/check/platform_characters"
+  },
+  "response": {
+    "status": 200,
+    "bodyFileName": "front/post_front_check_platform_characters_200.json",
+    "headers": {
+      "Content-Type": "application/json; charset=UTF-8"
+    },
+    "transformers": [
+      "response-template"
+    ]
+  }
+}

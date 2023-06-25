@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1.0" name="viewport">
+    <style>
+        *,
+        *:before,
+        *:after {
+            -webkit-box-sizing: inherit;
+            box-sizing: inherit;
+        }
+
+        html {
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            font-size: 62.5%; /*rem算出をしやすくするために*/
+        }
+
+        .btn,
+        a.btn,
+        button.btn {
+            font-size: 1.6rem;
+            font-weight: 700;
+            line-height: 1.5;
+            position: relative;
+            display: inline-block;
+            padding: 1rem 4rem;
+            cursor: pointer;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            -webkit-transition: all 0.3s;
+            transition: all 0.3s;
+            text-align: center;
+            vertical-align: middle;
+            text-decoration: none;
+            letter-spacing: 0.1em;
+            color: #212529;
+            border-radius: 0.5rem;
+        }
+
+        .btn--orange,
+        a.btn--orange {
+            color: #fff;
+            background-color: #eb6100;
+        }
+
+        .btn--orange:hover,
+        a.btn--orange:hover {
+            color: #fff;
+            background: #f56500;
+        }
+    </style>
+    <title>Webview共通処理の確認</title>
+</head>
+<body>
+<div>
+    <a class="btn btn--orange" href="https://dart.dev/guides/language/specifications/DartLangSpec-v2.10.pdf">PDF</a>
+</div>
+<div>
+    <a class="btn btn--orange" href="/sp/shop/">店舗トップ</a>
+</div>
+<div>
+    <a class="btn btn--orange" href="/sp/order-history/">注文履歴</a>
+</div>
+<div>
+    <a class="btn btn--orange" href="/sp/member/applications/new-application/01/">子育て応援</a>
+</div>
+<div>
+    <a class="btn btn--orange" href="/sp/subscribe/">定期便全般</a>
+</div>
+<div>
+    <a class="btn btn--orange" href="/sp/subscribe/shop/">定期便個別</a>
+</div>
+<div>
+    <a class="btn btn--orange" href="/sp/reserve/">予約商品全般</a>
+</div>
+<div>
+    <a class="btn btn--orange" href="/sp/reserve/shop/">予約商品個別</a>
+</div>
+</body>
+</html>

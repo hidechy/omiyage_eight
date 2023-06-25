@@ -1,0 +1,16 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPath": "/sp/member/delivery-address/edit"
+  },
+  "response": {
+    "status": 200,
+    "bodyFileName": "webview/delivery_address_change.html",
+    "headers": {
+      "Content-Type": "text/html; charset=UTF-8"
+    },
+    "transformers": [
+      "response-template"
+    ]
+  }
+}

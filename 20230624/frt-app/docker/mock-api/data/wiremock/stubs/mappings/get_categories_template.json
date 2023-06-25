@@ -1,0 +1,28 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPath": "/categories",
+    "queryParameters": {
+      "category_type": {
+        "matches": "^[a-z_]+$"
+      },
+      "shop_code": {
+        "matches": "^[0-9]{5}$"
+      },
+      "target_code": {
+        "matches": "^[0-9]{1,5}$"
+      }
+    }
+  },
+  "response": {
+    "status": 200,
+    "bodyFileName": "categories/get_categories_200_{{request.query.target_code}}_normal.json",
+    "headers": {
+      "Content-Type": "application/json; charset=UTF-8",
+      "Set-Cookie":"X-IYNS-LOGIN-TOKEN=wiremock-test"
+    },
+    "transformers": [
+      "response-template"
+    ]
+  }
+}

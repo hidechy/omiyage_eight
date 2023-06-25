@@ -1,0 +1,22 @@
+{
+  "request": {
+    "method": "POST",
+    "urlPathPattern": "/carts/([0-9]*)/items",
+    "bodyPatterns" : [
+      {
+        "matchesJsonPath" : "$.products"
+      }
+    ]
+  },
+  "response": {
+    "status": 400,
+    "bodyFileName": "carts_cart_id_items/post_carts_cart_id_items_400_2000072.json",
+    "headers": {
+      "Content-Type": "application/json; charset=UTF-8",
+      "Set-Cookie":"X-IYNS-LOGIN-TOKEN=9e781c6c-ddb7-4cdd-8fee-d0195b218001"
+    },
+    "transformers": [
+      "response-template"
+    ]
+  }
+}

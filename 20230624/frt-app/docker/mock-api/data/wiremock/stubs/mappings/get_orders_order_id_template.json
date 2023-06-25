@@ -1,0 +1,28 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPathPattern": "/orders/(\\d{1,8})",
+    "queryParameters": {
+      "page": {
+        "matches": "^[0-9]{1}$"
+      },
+      "regular_shipment_provisional_calculation_flag": {
+        "matches": "^[0-1]{1}$"
+      },
+      "front_div": {
+        "matches": "^[1-3]{1}$"
+      }
+    }
+  },
+  "response": {
+    "status": 200,
+    "bodyFileName": "orders/detail/get_orders_order_id_200_{{request.path.[1]}}.json",
+    "headers": {
+      "Content-Type": "application/json; charset=UTF-8",
+      "Set-Cookie": "X-IYNS-LOGIN-TOKEN=wiremock-test"
+    },
+    "transformers": [
+      "response-template"
+    ]
+  }
+}

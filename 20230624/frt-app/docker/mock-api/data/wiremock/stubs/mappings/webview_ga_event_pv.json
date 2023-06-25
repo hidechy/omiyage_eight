@@ -1,0 +1,16 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPattern": "/sp/ga/test"
+  },
+  "response": {
+    "status": 200,
+    "bodyFileName": "webview/ga_event_pv.html",
+    "headers": {
+      "Content-Type": "text/html; charset=UTF-8"
+    },
+    "transformers": [
+      "response-template"
+    ]
+  }
+}

@@ -1,0 +1,5 @@
+#include "Generated.xcconfig"
+#include "Debug.xcconfig"
+FLUTTER_FLAVOR=stg4
+PRODUCT_BUNDLE_IDENTIFIER=jp.co.lightcafe.iynetsuper.stg4
+BUNDLE_NAME=Stg4ネットスーパー

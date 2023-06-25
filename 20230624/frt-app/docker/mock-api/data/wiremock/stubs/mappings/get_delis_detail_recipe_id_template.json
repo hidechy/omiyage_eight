@@ -1,0 +1,16 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPattern": "/front/delis/detail/(\\d)*"
+  },
+  "response": {
+    "status": 200,
+    "bodyFileName": "front/get_front_delis_detail_recipe_id_200.json",
+    "headers": {
+      "Content-Type": "application/json; charset=UTF-8"
+    },
+    "transformers": [
+      "response-template"
+    ]
+  }
+}

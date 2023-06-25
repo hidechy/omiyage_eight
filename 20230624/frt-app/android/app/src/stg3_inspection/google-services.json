@@ -1,0 +1,97 @@
+{
+  "project_info": {
+    "project_number": "1050895371565",
+    "project_id": "iy-netsuper-inspection",
+    "storage_bucket": "iy-netsuper-inspection.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1050895371565:android:22fb63873725630b4757a4",
+        "android_client_info": {
+          "package_name": "jp.co.lightcafe.iynetsuper.stg1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1050895371565-hclr39k46058bknq0s4pq8b8p00l44bg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBIamZ7wun73r5uHtlSClkFI3Oc-bdRtS8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1050895371565-hclr39k46058bknq0s4pq8b8p00l44bg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1050895371565:android:375cec7c5f7a76334757a4",
+        "android_client_info": {
+          "package_name": "jp.co.lightcafe.iynetsuper.stg2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1050895371565-hclr39k46058bknq0s4pq8b8p00l44bg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBIamZ7wun73r5uHtlSClkFI3Oc-bdRtS8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1050895371565-hclr39k46058bknq0s4pq8b8p00l44bg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1050895371565:android:ac6d6ed1ebae00b84757a4",
+        "android_client_info": {
+          "package_name": "jp.co.lightcafe.iynetsuper.stg3"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1050895371565-hclr39k46058bknq0s4pq8b8p00l44bg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBIamZ7wun73r5uHtlSClkFI3Oc-bdRtS8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1050895371565-hclr39k46058bknq0s4pq8b8p00l44bg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

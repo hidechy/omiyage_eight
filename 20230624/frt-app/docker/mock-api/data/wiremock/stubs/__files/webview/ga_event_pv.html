@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>動作確認用ページ</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=2">
+</head>
+<script>
+    function sendWebViewPV(){
+        if (typeof window.nativeWebView === "undefined") {
+            // プロダクトコードではCookieの有無によってWebViewからの呼び出し判定をする
+            alert("nativeWebViewが存在しない");
+        } else {
+            const customEvent = new CustomEvent(
+                'sendCustomPV', {detail:'{"screenName": "test_screen_name"}'}
+            );
+            document.dispatchEvent(customEvent);
+        }
+    }
+    function buttonClick(){
+        const customEvent = new CustomEvent(
+            'sendCustomEvent', {detail:'{"eventName": "test_event"}'}
+            );
+        document.dispatchEvent(customEvent);
+    }
+    function sendUserProperty(){
+        const customEvent = new CustomEvent(
+            'sendUserProperty', {detail:'{"userKey": "test_user_property"}'}
+            );
+        document.dispatchEvent(customEvent);
+    }
+</script>
+<body>
+<form name="form" onload="sendWebViewPV()">
+    <input type="button" value="event送信" onclick="buttonClick()"><br>
+    <input type="button" value="PV送信" onclick="sendWebViewPV()"><br>
+    <input type="button" value="UserProperty送信" onclick="sendUserProperty()">
+</form>
+</body>
+</html>

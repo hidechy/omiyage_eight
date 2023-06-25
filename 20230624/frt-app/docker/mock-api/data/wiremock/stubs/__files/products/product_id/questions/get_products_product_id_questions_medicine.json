@@ -1,0 +1,25 @@
+{
+  "status_code": "N-00001",
+  "message": "正常終了しました。",
+  "error_details": null,
+  "data": [
+    {
+      "medicine_question": {
+        "product_name": "《医薬品》　イストサン下痢止め_ｌｐ　１２錠 【セルフメディケーション税制対象商品】",
+        "product_type": "B",
+        "attached_document": "バファリン説明書.pdf",
+        "medicine_unables": [
+          {
+            "effect": "下痢、食べすぎ・飲みすぎによる下痢、寝冷えによる下痢、腹痛を伴う下痢、食あたり、水あたり、軟便",
+            "abuse_limited_flag": "0"
+          }
+        ],
+        "medicine_repeat_message": "",
+        "medicine_repeat_message_code": "",
+        "gender": "2",
+        "is_underage": false
+      }
+    }
+  ],
+  "notice_details": null
+}

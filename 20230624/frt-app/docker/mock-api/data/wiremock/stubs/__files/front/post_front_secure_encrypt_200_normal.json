@@ -1,0 +1,18 @@
+{
+  "status_code": "N-00001",
+  "message": "正常終了しました。",
+  "front_message": "正常終了しました。",
+  "error_details": [],
+  "data": [
+    {
+      "value": "{{base64 (jsonPath request.body '$.parameter') padding=false}}"
+    }
+  ],
+  "total_data_num": 0,
+  "current_page_num": 0,
+  "total_page_num": 0,
+  "page_has_next": null,
+  "page_per_size": null,
+  "total_size": null,
+  "notice_details": []
+}

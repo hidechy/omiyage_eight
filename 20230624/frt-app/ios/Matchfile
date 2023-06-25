@@ -1,0 +1,7 @@
+# For all available options run `fastlane match --help`
+# Remove the # in the beginning of the line to enable the other options
+
+# The docs are available on https://docs.fastlane.tools/actions/match
+storage_mode("git")
+app_identifier(["jp.itoyokado.netsuper.local", "jp.itoyokado.netsuper.stg1", "jp.itoyokado.netsuper.stg2", "jp.itoyokado.netsuper"])
+username("kimura-eiichirou@hd.7andi.co.jp")

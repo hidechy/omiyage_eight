@@ -1,0 +1,16 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPattern": "/sp/order/([1-9][0-9]{0,7})"
+  },
+  "response": {
+    "status": 200,
+    "bodyFileName": "webview/order_conf.html",
+    "headers": {
+      "Content-Type": "text/html; charset=UTF-8"
+    },
+    "transformers": [
+      "response-template"
+    ]
+  }
+}

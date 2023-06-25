@@ -1,0 +1,7 @@
+#include "Generated.xcconfig"
+#include "Release.xcconfig"
+TRACK_WIDGET_CREATION=
+
+FLUTTER_FLAVOR=stg2
+PRODUCT_BUNDLE_IDENTIFIER=jp.co.lightcafe.iynetsuper.stg2
+BUNDLE_NAME=Stg2ネットスーパー

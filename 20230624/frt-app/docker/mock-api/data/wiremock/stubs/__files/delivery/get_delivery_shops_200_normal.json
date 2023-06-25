@@ -1,0 +1,13 @@
+{
+  "status_code": "N-00001",
+  "notice_details": [],
+  "front_message": "（フロントメッセージ）",
+  "message": "正常終了しました。",
+  "error_details": [],
+  "data": [
+    {
+      "delivery_shop_code": "00209",
+      "delivery_shop_name": "木場店"
+    }
+  ]
+}

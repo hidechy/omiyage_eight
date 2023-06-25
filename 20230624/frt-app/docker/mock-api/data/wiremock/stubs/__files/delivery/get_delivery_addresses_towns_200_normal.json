@@ -1,0 +1,29 @@
+{
+  "status_code": "N-00001",
+  "notice_details": [],
+  "front_message": "（フロントメッセージ）",
+  "message": "正常終了しました。",
+  "error_details": [],
+  "data": [
+    {
+      "code": "001",
+      "name": "朝日町"
+    },
+    {
+      "code": "002",
+      "name": "東町"
+    },
+    {
+      "code": "003",
+      "name": "大神町"
+    },
+    {
+      "code": "011",
+      "name": "木場"
+    },
+    {
+      "code": "025",
+      "name": "歌舞伎町"
+    }
+  ]
+}

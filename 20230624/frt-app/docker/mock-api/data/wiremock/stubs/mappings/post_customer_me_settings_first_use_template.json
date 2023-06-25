@@ -1,0 +1,46 @@
+{
+    "request": {
+        "method": "POST",
+        "urlPath": "/customers/me/settings/first_use",
+        "bodyPatterns": [
+            {
+                "matchesJsonPath": "[?(@.prefecture_code =~ /^[0-9]{2}$/)]"
+            },
+            {
+                "matchesJsonPath": "[?(@.city_code =~ /^[0-9]{3}$/)]"
+            },
+            {
+                "matchesJsonPath": "[?(@.town_code =~ /^[0-9]{3}$/)]"
+            },
+            {
+                "matchesJsonPath": "[?(@.chome_code =~ /^[0-9]{3}$/)]"
+            },
+            {
+                "matchesJsonPath": "[?(@.address =~ /.*/)]"
+            },
+            {
+                "matchesJsonPath": "[?(@.address2 =~ /.*/)]"
+            },
+            {
+                "matchesJsonPath": "[?(@.mail_magazine_type =~ /^[0-9]{1}$/)]"
+            },
+            {
+                "matchesJsonPath": "[?(@.iy_visit_id =~ /.*/)]"
+            },
+            {
+                "matchesJsonPath": "[?(@.shop_code =~ /.*/)]"
+            }
+        ]
+    },
+    "response": {
+        "status": 200,
+        "bodyFileName": "customers/me/post_customer_me_settings_first_use_200_normal.json",
+        "headers": {
+            "Content-Type": "application/json; charset=UTF-8",
+            "Set-Cookie": "x-iyns-login-token={{randomValue type='UUID'}}"
+        },
+        "transformers": [
+            "response-template"
+        ]
+    }
+}

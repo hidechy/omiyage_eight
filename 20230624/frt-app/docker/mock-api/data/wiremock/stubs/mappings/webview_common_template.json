@@ -1,0 +1,13 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/sp/webview-test/"
+  },
+  "response": {
+    "status": 200,
+    "bodyFileName": "webview/common_test.html",
+    "headers": {
+      "Content-Type": "text/html; charset=UTF-8"
+    }
+  }
+}

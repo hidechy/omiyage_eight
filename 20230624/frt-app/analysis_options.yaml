@@ -1,0 +1,62 @@
+# https://pub.dev/packages/flutter_lints
+include: package:flutter_lints/flutter.yaml
+
+analyzer:
+  exclude:
+    - "generated_model/**"
+    - "**/*.g.dart"
+    - "**/*.freezed.dart"
+    - "**/*.gen.dart"
+  strong-mode:
+    implicit-casts: false
+    implicit-dynamic: false
+  errors:
+    missing_required_param: error
+    missing_return: error
+
+linter:
+  rules:
+    public_member_api_docs: false
+    # 80は短すぎるのでfalse
+    # IDEAで120文字設定すること
+    lines_longer_than_80_chars: false
+    # https://dart-lang.github.io/linter/lints/prefer_const_constructors.html
+    prefer_const_constructors: true
+    # https://dart-lang.github.io/linter/lints/empty_statements.html
+    empty_statements: true
+    # https://dart-lang.github.io/linter/lints/no_duplicate_case_values.html
+    no_duplicate_case_values: true
+    # https://dart-lang.github.io/linter/lints/annotate_overrides.html
+    annotate_overrides: true
+    # https://dart-lang.github.io/linter/lints/avoid_returning_null_for_void.html
+    avoid_returning_null_for_void: true
+    # https://dart-lang.github.io/linter/lints/avoid_single_cascade_in_expression_statements.html
+    avoid_single_cascade_in_expression_statements: true
+    # https://dart-lang.github.io/linter/lints/prefer_conditional_assignment.html
+    prefer_conditional_assignment: true
+    # https://dart-lang.github.io/linter/lints/prefer_const_declarations.html
+    prefer_const_declarations: true
+    # https://dart-lang.github.io/linter/lints/prefer_const_literals_to_create_immutables.html
+    prefer_const_literals_to_create_immutables: true
+    # https://dart-lang.github.io/linter/lints/prefer_for_elements_to_map_fromIterable.html
+    prefer_for_elements_to_map_fromIterable: true
+    # https://dart-lang.github.io/linter/lints/prefer_if_null_operators.html
+    prefer_if_null_operators: true
+    # https://dart-lang.github.io/linter/lints/prefer_null_aware_operators.html
+    prefer_null_aware_operators: true
+    # https://dart-lang.github.io/linter/lints/prefer_single_quotes.html
+    prefer_single_quotes: true
+    # https://dart-lang.github.io/linter/lints/unnecessary_null_in_if_null_operators.html
+    unnecessary_null_in_if_null_operators: true
+    # https://dart-lang.github.io/linter/lints/use_key_in_widget_constructors.html
+    # widgetコンストラクタでキー使用する
+    use_key_in_widget_constructors: true
+    # https://dart-lang.github.io/linter/lints/prefer_relative_imports.html
+    # importルールを相対パスに制限
+    prefer_relative_imports: true
+    # https://dart-lang.github.io/linter/lints/avoid_relative_lib_imports.html
+    # lib/の入ったimportは禁止
+    avoid_relative_lib_imports: true
+    # https://dart-lang.github.io/linter/lints/sort_constructors_first.html
+    # const宣言を他のメンバーの前に並び替える
+    sort_constructors_first: true

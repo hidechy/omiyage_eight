@@ -1,0 +1,17 @@
+{
+  "request": {
+    "method": "POST",
+    "urlPath": "/carts/deemed"
+  },
+  "response": {
+    "status": 200,
+    "bodyFileName": "carts_deemed/post_cart_deemed_200_normal.json",
+    "headers": {
+      "Content-Type": "application/json; charset=UTF-8",
+      "Set-Cookie": "X-IYNS-LOGIN-TOKEN=wiremock-test"
+    },
+    "transformers": [
+      "response-template"
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "status_code": "N-00001",
+  "notice_details": [],
+  "front_message": "（フロントメッセージ）",
+  "message": "正常終了しました。",
+  "error_details": [],
+  "data": [
+    {
+      "code": "13",
+      "name": "東京都"
+    },
+    {
+      "code": "14",
+      "name": "神奈川県"
+    },
+    {
+      "code": "15",
+      "name": "新潟県"
+    }
+  ]
+}

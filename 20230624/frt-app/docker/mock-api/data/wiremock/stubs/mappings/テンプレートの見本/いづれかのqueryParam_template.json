@@ -1,0 +1,21 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPath": "/test/query/param",
+    "queryParameters": {
+      "count": {
+        "matches": "^[0-9]{1}$"
+      }
+    }
+  },
+  "response": {
+    "status": 200,
+    "bodyFileName": "ボディーファイルの見本/queryParamが{{request.query.count}}の場合.json",
+    "headers": {
+      "Content-Type": "application/json; charset=UTF-8"
+    },
+    "transformers": [
+      "response-template"
+    ]
+  }
+}

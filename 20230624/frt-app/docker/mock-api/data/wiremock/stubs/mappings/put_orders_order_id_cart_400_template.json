@@ -1,0 +1,17 @@
+{
+  "request": {
+    "method": "PUT",
+    "urlPathPattern": "/orders/(\\d{1,8})/cart/400"
+  },
+  "response": {
+    "status": 400,
+    "bodyFileName": "orders/detail/put_orders_order_id_cart_400.json",
+    "headers": {
+      "Content-Type": "application/json; charset=UTF-8",
+      "Set-Cookie": "X-IYNS-LOGIN-TOKEN=wiremock-test"
+    },
+    "transformers": [
+      "response-template"
+    ]
+  }
+}

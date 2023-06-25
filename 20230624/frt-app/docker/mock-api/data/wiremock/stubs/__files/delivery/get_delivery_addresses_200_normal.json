@@ -1,0 +1,18 @@
+{
+  "status_code": "N-00001",
+  "notice_details": [],
+  "front_message": "（フロントメッセージ）",
+  "message": "正常終了しました。",
+  "error_details": [],
+  "data": [
+    {
+      "prefecture_code": "13",
+      "city_code": "103",
+      "town_code": "025",
+      "postal_number": "0010001",
+      "prefecture_name": "東京都",
+      "city_name": "渋谷区",
+      "town_name": "歌舞伎町"
+    }
+  ]
+}

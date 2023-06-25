@@ -1,0 +1,17 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPathPattern": "/shops/(\\d{1,5})/medicine_confirms"
+  },
+  "response": {
+    "status": 200,
+    "bodyFileName": "shops/get_shops_shop_code_medicine_confirms_200.json",
+    "headers": {
+      "Content-Type": "application/json; charset=UTF-8",
+      "Set-Cookie": "X-IYNS-LOGIN-TOKEN=wiremock-test"
+    },
+    "transformers": [
+      "response-template"
+    ]
+  }
+}

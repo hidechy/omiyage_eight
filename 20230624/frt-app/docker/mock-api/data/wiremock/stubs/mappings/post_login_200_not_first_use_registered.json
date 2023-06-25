@@ -1,0 +1,19 @@
+{
+  "priority": 1,
+  "request": {
+    "method": "POST",
+    "url": "/login"
+  },
+  "response": {
+    "status": 200,
+    "bodyFileName": "login/post_login_200_not_first_use_registered.json",
+    "headers": {
+      "Content-Type": "application/json; charset=UTF-8",
+      "Set-Cookie": "x-iyns-login-token={{randomValue type='UUID'}}",
+      "Set-Cookie": "x-iyns-7id-first-use-token={{randomValue type='UUID'}}"
+    },
+    "transformers": [
+      "response-template"
+    ]
+  }
+}

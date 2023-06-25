@@ -1,0 +1,16 @@
+{
+  "request" : {
+    "method": "GET",
+    "urlPath": "/settings/info/access_point_info_200_incorrect_json_format.json"
+  },
+  "response": {
+    "status": 200,
+    "bodyFileName": "json/access_point_info_200_incorrect_json_format.json",
+    "headers": {
+      "Content-Type": "application/json; charset=UTF-8"
+    },
+    "transformers": [
+      "response-template"
+    ]
+  }
+}

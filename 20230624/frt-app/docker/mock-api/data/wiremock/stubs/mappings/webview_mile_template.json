@@ -1,0 +1,33 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPath": "/state/redirect",
+    "queryParameters": {
+      "r_url": {
+        "matches": "^.+$"
+      },
+      "appid": {
+        "matches": "^bp_iy$"
+      },
+      "utmparam": {
+        "matches": "^utm_campaign=iyns_7mp$"
+      },
+      "utm_medium": {
+        "matches": "^referral$"
+      },
+      "cmnmmbridhash_128": {
+        "matches": "^.*$"
+      }
+    }
+  },
+  "response": {
+    "status": 200,
+    "bodyFileName": "webview/mile.html",
+    "headers": {
+      "Content-Type": "text/html; charset=UTF-8"
+    },
+    "transformers": [
+      "response-template"
+    ]
+  }
+}

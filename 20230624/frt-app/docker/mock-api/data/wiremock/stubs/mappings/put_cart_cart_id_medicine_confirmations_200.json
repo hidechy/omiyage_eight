@@ -1,0 +1,16 @@
+{
+  "request": {
+    "method":"PUT",
+    "urlPathPattern": "/carts/(\\d{8})/medicine_confirmations"
+  },
+  "response": {
+    "status": 200,
+    "bodyFileName": "cart/put_cart_cart_id_medicine_confirmations_200.json",
+    "headers": {
+      "Content-Type": "application/json; charset=UTF-8"
+    },
+    "transformers": [
+      "response-template"
+    ]
+  }
+}

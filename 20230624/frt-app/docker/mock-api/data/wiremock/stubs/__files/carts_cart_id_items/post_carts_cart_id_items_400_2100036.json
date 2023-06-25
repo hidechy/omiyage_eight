@@ -1,0 +1,24 @@
+{
+  "status_code": "E-00002",
+  "message": "クライアント入力値の検査エラーが発生しました。",
+  "front_message": "フロントメッセージ",
+  "error_details": [
+    {
+      "error_key": "products[0].product_id",
+      "error_reason": "誠に申し訳御座いませんが、お支払い方法がデビットカード、プリペイドカード、または全額ポイント利用で設定されている場合、商品名（{0}）は不定貫商品のため、お買い物カゴに追加頂けません。<br>お手数では御座いますが、クレジットカードでのお支払いを設定の上、お買い物カゴに追加をお願いいたします。",
+      "error_reason_substitute": [
+        {
+          "key": "{0}",
+          "value": "アメリカ産　牛カレー用(300ｇ)"
+        }
+      ],
+      "error_reason_code": "2100036",
+      "error_front_message": "（フロントエラーメッセージ）"
+    }
+  ],
+  "data": [],
+  "notice_details": [],
+  "total_data_num": 0,
+  "current_page_num": 0,
+  "total_page_num": 0
+}

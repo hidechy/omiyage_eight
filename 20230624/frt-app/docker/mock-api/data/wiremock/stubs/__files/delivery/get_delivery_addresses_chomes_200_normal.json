@@ -1,0 +1,25 @@
+{
+  "status_code": "N-00001",
+  "notice_details": [],
+  "front_message": "（フロントメッセージ）",
+  "message": "正常終了しました。",
+  "error_details": [],
+  "data": [
+    {
+      "code": "001",
+      "name": "１丁目"
+    },
+    {
+      "code": "002",
+      "name": "２丁目"
+    },
+    {
+      "code": "003",
+      "name": "３丁目"
+    },
+    {
+      "code": "005",
+      "name": "５丁目"
+    }
+  ]
+}

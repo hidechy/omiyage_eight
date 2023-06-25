@@ -1,0 +1,29 @@
+{
+  "status_code": "N-00001",
+  "notice_details": [],
+  "front_message": "（フロントメッセージ）",
+  "message": "正常終了しました。",
+  "error_details": [],
+  "data": [
+    {
+      "code": "108",
+      "name": "江東区"
+    },
+    {
+      "code": "207",
+      "name": "昭島市"
+    },
+    {
+      "code": "228",
+      "name": "あきる野市"
+    },
+    {
+      "code": "121",
+      "name": "足立区"
+    },
+    {
+      "code": "103",
+      "name": "渋谷区"
+    }
+  ]
+}

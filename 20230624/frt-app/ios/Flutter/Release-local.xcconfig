@@ -1,0 +1,7 @@
+#include "Generated.xcconfig"
+#include "Release.xcconfig"
+TRACK_WIDGET_CREATION=
+
+FLUTTER_FLAVOR=local
+PRODUCT_BUNDLE_IDENTIFIER=jp.co.lightcafe.iynetsuper.local
+BUNDLE_NAME=Localネットスーパー

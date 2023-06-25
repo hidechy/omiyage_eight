@@ -1,0 +1,16 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPattern": "/test/(\\d)*"
+  },
+  "response": {
+    "status": 200,
+    "bodyFileName": "ボディーファイルの見本/urlの末尾が{{request.path.[1]}}です.json",
+    "headers": {
+      "Content-Type": "application/json; charset=UTF-8"
+    },
+    "transformers": [
+      "response-template"
+    ]
+  }
+}

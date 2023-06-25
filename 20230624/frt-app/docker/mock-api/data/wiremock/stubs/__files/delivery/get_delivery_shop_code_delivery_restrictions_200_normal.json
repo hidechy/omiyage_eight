@@ -1,0 +1,155 @@
+{
+  "status_code": "N-00001",
+  "message": "正常終了しました。",
+  "error_details": [],
+  "data": [
+    {
+      "address": {
+        "prefecture_code": "13",
+        "prefecture_name": "東京都",
+        "city_code": "104",
+        "city_name": "新宿区",
+        "town_code": "065",
+        "town_name": "中里町",
+        "chome_code": "000",
+        "chome_name": ""
+      },
+      "delivery_times": [
+        {
+          "delivery_closing_time": "2000",
+          "is_previous_day": true,
+          "delivery_start_time": "1000",
+          "delivery_finish_time": "1200",
+          "delivery_dates": [
+            {
+              "delivery_date": "20210906",
+              "is_delivery_delay": false,
+              "is_delivery_closed": false
+            },
+            {
+              "delivery_date": "20210907",
+              "is_delivery_delay": false,
+              "is_delivery_closed": false
+            },
+            {
+              "delivery_date": "20210908",
+              "is_delivery_delay": false,
+              "is_delivery_closed": false
+            },
+            {
+              "delivery_date": "20210909",
+              "is_delivery_delay": false,
+              "is_delivery_closed": false
+            },
+            {
+              "delivery_date": "20210910",
+              "is_delivery_delay": false,
+              "is_delivery_closed": false
+            },
+            {
+              "delivery_date": "20210911",
+              "is_delivery_delay": false,
+              "is_delivery_closed": false
+            },
+            {
+              "delivery_date": "20210912",
+              "is_delivery_delay": false,
+              "is_delivery_closed": false
+            }
+          ]
+        },
+        {
+          "delivery_closing_time": "0700",
+          "is_previous_day": false,
+          "delivery_start_time": "1200",
+          "delivery_finish_time": "1400",
+          "delivery_dates": [
+            {
+              "delivery_date": "20210906",
+              "is_delivery_delay": true,
+              "is_delivery_closed": false
+            },
+            {
+              "delivery_date": "20210907",
+              "is_delivery_delay": true,
+              "is_delivery_closed": false
+            },
+            {
+              "delivery_date": "20210908",
+              "is_delivery_delay": true,
+              "is_delivery_closed": false
+            },
+            {
+              "delivery_date": "20210909",
+              "is_delivery_delay": true,
+              "is_delivery_closed": false
+            },
+            {
+              "delivery_date": "20210910",
+              "is_delivery_delay": true,
+              "is_delivery_closed": false
+            },
+            {
+              "delivery_date": "20210911",
+              "is_delivery_delay": true,
+              "is_delivery_closed": false
+            },
+            {
+              "delivery_date": "20210912",
+              "is_delivery_delay": true,
+              "is_delivery_closed": false
+            }
+          ]
+        },
+        {
+          "delivery_closing_time": "0700",
+          "is_previous_day": false,
+          "delivery_start_time": "1300",
+          "delivery_finish_time": "1500",
+          "delivery_dates": [
+            {
+              "delivery_date": "20210906",
+              "is_delivery_delay": false,
+              "is_delivery_closed": false
+            },
+            {
+              "delivery_date": "20210907",
+              "is_delivery_delay": false,
+              "is_delivery_closed": false
+            },
+            {
+              "delivery_date": "20210908",
+              "is_delivery_delay": false,
+              "is_delivery_closed": false
+            },
+            {
+              "delivery_date": "20210909",
+              "is_delivery_delay": false,
+              "is_delivery_closed": false
+            },
+            {
+              "delivery_date": "20210910",
+              "is_delivery_delay": false,
+              "is_delivery_closed": false
+            },
+            {
+              "delivery_date": "20210911",
+              "is_delivery_delay": false,
+              "is_delivery_closed": false
+            },
+            {
+              "delivery_date": "20210912",
+              "is_delivery_delay": false,
+              "is_delivery_closed": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notice_details": [],
+  "total_data_num": 3,
+  "current_page_num": 1,
+  "total_page_num": 1,
+  "front_message": "（フロントメッセージ）"
+}

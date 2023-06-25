@@ -1,0 +1,16 @@
+{
+  "request": {
+    "method": "DELETE",
+    "urlPathPattern": "/carts/([0-9]*)"
+  },
+  "response": {
+    "status": 200,
+    "bodyFileName": "carts_cart_id_items/delete_carts_cart_id_200_normal.json",
+    "headers": {
+      "Content-Type": "application/json; charset=UTF-8"
+    },
+    "transformers": [
+      "response-template"
+    ]
+  }
+}

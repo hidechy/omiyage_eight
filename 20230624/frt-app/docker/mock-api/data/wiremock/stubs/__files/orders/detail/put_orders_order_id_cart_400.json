@@ -1,0 +1,18 @@
+{
+  "status_code": "E-00007",
+  "message": "業務ルール違反エラーが発生しました。",
+  "error_details": [
+    {
+      "error_key": null,
+      "error_reason": "変更締め時間を過ぎています。",
+      "error_reason_substitute": [],
+      "error_reason_code": "2000039",
+      "error_front_message": "（フロントエラーメッセージ）"
+    }
+  ],
+  "data": [],
+  "notice_details": [],
+  "total_data_num": 0,
+  "current_page_num": 0,
+  "total_page_num": 0
+}

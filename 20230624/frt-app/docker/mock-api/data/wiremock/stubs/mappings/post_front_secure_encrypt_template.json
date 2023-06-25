@@ -1,0 +1,16 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/front/secure/encrypt"
+  },
+  "response": {
+    "status": 200,
+    "bodyFileName": "front/post_front_secure_encrypt_200_normal.json",
+    "headers": {
+      "Content-Type": "application/json; charset=UTF-8"
+    },
+    "transformers": [
+      "response-template"
+    ]
+  }
+}

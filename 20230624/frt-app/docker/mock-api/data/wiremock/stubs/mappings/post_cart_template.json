@@ -1,0 +1,40 @@
+{
+  "request": {
+    "method": "POST",
+    "urlPath": "/carts",
+    "bodyPatterns": [
+      {
+        "matchesJsonPath": "[?(@.cart_div =~ /^[12]$/)]"
+      },
+      {
+        "matchesJsonPath": "[?(@.shop_code =~ /^[0-9]{5}$/)]"
+      },
+      {
+        "matchesJsonPath": "[?(@.delivery_date =~ /^[0-9]{8}$/)]"
+      },
+      {
+        "matchesJsonPath": "[?(@.delivery_time_id =~ /^[0-9]*$/)]"
+      },
+      {
+        "matchesJsonPath": "[?(@.delete_limited_product_flag =~ /^[01]{1}/)]"
+      },
+      {
+        "matchesJsonPath": "[?(@.no_contact_flag =~ /^[0-1]$/)]"
+      },
+      {
+        "matchesJsonPath": "[?(@.delete_precart_flag =~ /^[0-1]$/)]"
+      }
+    ]
+  },
+  "response": {
+    "status": 200,
+    "bodyFileName": "cart/post_cart_200_{{jsonPath request.body '$.shop_code'}}_{{jsonPath request.body '$.delivery_date'}}_{{jsonPath request.body '$.delivery_time_id'}}_{{jsonPath request.body '$.delete_limited_product_flag'}}_{{jsonPath request.body '$.no_contact_flag'}}.json",
+    "headers": {
+      "Content-Type": "application/json; charset=UTF-8",
+      "Set-Cookie": "X-IYNS-LOGIN-TOKEN=wiremock-test"
+    },
+    "transformers": [
+      "response-template"
+    ]
+  }
+}

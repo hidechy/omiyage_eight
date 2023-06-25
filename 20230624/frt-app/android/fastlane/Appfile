@@ -1,0 +1,2 @@
+json_key_file("./pc-api-6736176825022250896-687-df862a76f126.json") # Path to the json secret file - Follow https://docs.fastlane.tools/actions/supply/#setup to get one
+package_name("jp.itoyokado.netsuper") # e.g. com.krausefx.app

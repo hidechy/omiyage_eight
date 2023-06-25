@@ -1,0 +1,23 @@
+{
+  "priority": 2,
+  "request": {
+    "method": "GET",
+    "urlPath": "/carts",
+    "queryParameters": {
+      "cart_id": {
+        "matches": "^11[0-9]{6}$"
+      }
+    }
+  },
+  "response": {
+    "status": 200,
+    "bodyFileName": "cart/get_cart_200_{{request.query.cart_id}}_campaign_discount.json",
+    "headers": {
+      "Content-Type": "application/json; charset=UTF-8",
+      "Set-Cookie":"X-IYNS-LOGIN-TOKEN=wiremock-test"
+    },
+    "transformers": [
+      "response-template"
+    ]
+  }
+}

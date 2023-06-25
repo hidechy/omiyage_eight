@@ -1,0 +1,20 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/login/visitor",
+    "bodyPatterns" : [
+      { "matchesJsonPath" : "[?(@.shop_code =~ /[0-9]{5}/)]"}
+    ]
+  },
+  "response": {
+    "status": 200,
+    "bodyFileName": "login/visitor/post_login_visitor_200_normal.json",
+    "headers": {
+      "Content-Type": "application/json; charset=UTF-8",
+      "Set-Cookie":"x-iyns-login-token={{randomValue type='UUID'}}"
+    },
+    "transformers": [
+      "response-template"
+    ]
+  }
+}

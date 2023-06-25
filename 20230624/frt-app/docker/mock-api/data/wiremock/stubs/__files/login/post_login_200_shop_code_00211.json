@@ -1,0 +1,132 @@
+{
+  "status_code": "N-00001",
+  "message": "正常終了しました。",
+  "error_details": [],
+  "data": [
+    {
+      "customer_type": "1",
+      "delivery_address": {
+        "postal_number": "1350042",
+        "prefecture_code": "13",
+        "prefecture_name": "東京都",
+        "city_code": "108",
+        "city_name": "江東区",
+        "town_code": "011",
+        "town_name": "木場",
+        "chome_code": "005",
+        "chome_name": "５丁目",
+        "address_detail": "１－２",
+        "address_detail2": "〇〇レジデンス　１０２号室",
+        "is_abolished": false,
+        "prefectures": [
+          {
+            "code": "13",
+            "name": "東京都"
+          }
+        ],
+        "cities": [
+          {
+            "code": "108",
+            "name": "江東区"
+          }
+        ],
+        "towns": [
+          {
+            "code": "011",
+            "name": "木場"
+          }
+        ],
+        "chomes": [
+          {
+            "code": "005",
+            "name": "５丁目"
+          }
+        ],
+        "mansion_id": null,
+        "living_status": null,
+        "package_drop_place": null,
+        "package_drop_place_detail": null
+      },
+      "undelivered_message_code": "2000005",
+      "changeable_address_date": null,
+      "delivery_shop": [
+        {
+          "shop_code": "00211",
+          "shop_name": "木場店",
+          "is_complete_closed": false,
+          "is_before_new_open_date": false,
+          "can_package_drop": true,
+          "delivery_base_code": "0000",
+          "delivery_base_name": "木場店"
+        }
+      ],
+      "customer_address": {
+        "postal_number": "1350042",
+        "prefecture_code": "13",
+        "prefecture_name": "東京都",
+        "city_code": "108",
+        "city_name": "江東区",
+        "town_code": "011",
+        "town_name": "木場",
+        "chome_code": "005",
+        "chome_name": "５丁目",
+        "address_detail": "１－２",
+        "address_detail2": "〇〇レジデンス　１０２号室"
+      },
+      "login_id": "btc_omni_00209",
+      "last_name": "山田",
+      "first_name": "太郎",
+      "last_name_kana": "ヤマダ",
+      "first_name_kana": "タロウ",
+      "tel_number1": "03",
+      "tel_number2": "1111",
+      "tel_number3": "2222",
+      "emergency_tel_number1": "090",
+      "emergency_tel_number2": "1111",
+      "emergency_tel_number3": "2222",
+      "main_mail_address": "main@sample.com",
+      "sub_mail_address": "sub@sample.com",
+      "gender": "0",
+      "birth_year": "2000",
+      "birth_month": "12",
+      "birth_day_of_month": "20",
+      "is_individual_customer": false,
+      "company_name": null,
+      "department_name": null,
+      "mail_send_type": "1",
+      "campaign": {
+        "price_type": "1",
+        "name": "木場店限定の子育て配達料キャンペーン",
+        "price": null,
+        "discount_rate": 50,
+        "start_datetime": "2021-03-01T00:00:00+09:00",
+        "finish_datetime": "2021-03-31T00:00:00+09:00"
+      },
+      "nanaco_number": "1234",
+      "is_login_mfa": "0",
+      "status": null,
+      "cmnmmbridhash_128": "92e3b6e45942ddc6997e44ef512327612c5432c13fc10ea0e403c28d99fabdf670185cfec06393f5b17984b015c7e0c16ae577cdbf6914219523f9e29518dde0",
+      "is_address_difference": false,
+      "is_first_use_registered": true,
+      "is_can_not_buy_product": true,
+      "can_not_buy_product_names": [
+        "サントリー　チューハイ　トリスハイボール1缶（350ml）",
+        "サントリー　チューハイ　トリスハイボール1缶（350ml）",
+        "サントリー　チューハイ　トリスハイボール1缶（350ml）",
+        "サントリー　チューハイ　トリスハイボール1缶（350ml）",
+        "サントリー　チューハイ　トリスハイボール1缶（350ml）",
+        "サントリー　チューハイ　トリスハイボール1缶（350ml）",
+        "サントリー　チューハイ　トリスハイボール1缶（350ml）",
+        "サントリー　チューハイ　トリスハイボール1缶（350ml）",
+        "サントリー　チューハイ　トリスハイボール1缶（350ml）",
+        "サントリー　チューハイ　トリスハイボール1缶（350ml）",
+        "サントリー　チューハイ　トリスハイボール1缶（350ml）"
+      ]
+    }
+  ],
+  "notice_details": [],
+  "total_data_num": 1,
+  "current_page_num": 1,
+  "total_page_num": 1,
+  "front_message": "（フロントメッセージ）"
+}

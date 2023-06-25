@@ -1,0 +1,21 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPath": "/banners/after_login",
+    "queryParameters": {
+      "shop_code": {
+        "equalTo": "99999"
+      }
+    }
+  },
+  "response": {
+    "status": 404,
+    "bodyFileName": "banners/after_login/get_banners_after_login_404.json",
+    "headers": {
+      "Content-Type": "application/json; charset=UTF-8"
+    },
+    "transformers": [
+      "response-template"
+    ]
+  }
+}

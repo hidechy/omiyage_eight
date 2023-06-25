@@ -1,0 +1,26 @@
+{
+  "request": {
+    "method": "PUT",
+    "urlPathPattern": "/carts/2100029/items",
+    "bodyPatterns" : [
+      {
+        "matchesJsonPath" : "$[?(@.product_id =~ /^[0-9]{1,13}$/)]",
+        "matchesJsonPath" : "$[?(@.item_count =~ /^[0-9]{8}$/)]",
+        "matchesJsonPath" : "$[?(@.product_detail_key =~ /^[0-9]{9}/)]",
+        "matchesJsonPath" : "$[?(@.regular_shipment_apply_flag =~ /^[01]{1}$/)]",
+        "matchesJsonPath" : "$[?(@.confirm_flag =~ /^[01]{1}/)]"
+      }
+    ]
+  },
+  "response": {
+    "status": 400,
+    "bodyFileName": "carts_cart_id_items/put_cart_cart_id_items_400_2100029.json",
+    "headers": {
+      "Content-Type": "application/json; charset=UTF-8",
+      "Set-Cookie":"X-IYNS-LOGIN-TOKEN=9e781c6c-ddb7-4cdd-8fee-d0195b218001"
+    },
+    "transformers": [
+      "response-template"
+    ]
+  }
+}

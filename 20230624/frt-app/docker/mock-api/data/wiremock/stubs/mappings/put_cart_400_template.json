@@ -1,0 +1,34 @@
+{
+  "request": {
+    "method": "PUT",
+    "urlPathPattern": "/carts/400",
+    "bodyPatterns": [
+        {
+            "matchesJsonPath": "[?(@.delivery_date =~ /^[0-9]{8}$/)]"
+        },
+        {
+            "matchesJsonPath": "[?(@.delivery_time_id =~ /^[0-9]*$/)]"
+        },
+        {
+            "matchesJsonPath": "[?(@.delete_limited_delivery_product_flag =~ /^[01]{1}/)]"
+        },
+        {
+            "matchesJsonPath": "[?(@.no_contact_flag =~ /^[0-1]$/)]"
+        },
+        {
+            "matchesJsonPath": "[?(@.limited_product_for_mock =~ /^[a-z0-9\\_]+$/)]"
+        }
+    ]
+  },
+  "response": {
+    "status": 400,
+    "bodyFileName": "cart/put_cart_400.json",
+    "headers": {
+      "Content-Type": "application/json; charset=UTF-8",
+      "Set-Cookie":"X-IYNS-LOGIN-TOKEN=wiremock-test"
+    },
+    "transformers": [
+      "response-template"
+    ]
+  }
+}

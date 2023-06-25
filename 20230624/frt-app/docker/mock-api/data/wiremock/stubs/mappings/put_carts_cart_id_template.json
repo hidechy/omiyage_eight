@@ -1,0 +1,28 @@
+{
+  "request": {
+    "method": "PUT",
+    "urlPathPattern": "/carts/(\\d{8})",
+    "bodyPatterns": [
+        {
+            "matchesJsonPath": "[?(@.delivery_time_id =~ /^[0-9]*$/)]"
+        },
+        {
+            "matchesJsonPath": "[?(@.limited_product_for_mock =~ /^[a-z0-9\\_]+$/)]"
+        },
+        {
+          "matchesJsonPath": "[?(@.refresh_only_flag =~ /^[0-1]$/)]"
+        }
+    ]
+  },
+  "response": {
+    "status": 200,
+    "bodyFileName": "cart/put_carts_cart_id_200.json",
+    "headers": {
+      "Content-Type": "application/json; charset=UTF-8",
+      "Set-Cookie":"X-IYNS-LOGIN-TOKEN=wiremock-test"
+    },
+    "transformers": [
+      "response-template"
+    ]
+  }
+}

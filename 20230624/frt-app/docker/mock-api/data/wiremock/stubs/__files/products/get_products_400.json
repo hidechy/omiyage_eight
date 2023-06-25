@@ -1,0 +1,27 @@
+{
+    "status_code": "E-00007",
+    "message": "業務ルール違反エラーが発生しました。",
+    "error_details": [
+        {
+            "error_key": null,
+            "error_reason": "{0}：{1}はただ今ログイン制限中です。",
+            "error_reason_substitute": [
+                {
+                    "key": "{0}",
+                    "value": "00209"
+                },
+                {
+                    "key": "{1}",
+                    "value": "木場店"
+                }
+            ],
+            "error_reason_code": "2000124",
+            "error_front_message": "（フロントエラーメッセージ）"
+        }
+    ],
+    "data": [],
+    "notice_details": [],
+    "total_data_num": 0,
+    "current_page_num": 0,
+    "total_page_num": 0
+}

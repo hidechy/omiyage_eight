@@ -1,0 +1,51 @@
+{
+  "status_code": "N-00001",
+  "message": "正常終了しました。",
+  "front_message": "（フロントメッセージ）",
+  "error_details": [],
+  "data": [
+    {
+      "recipes": [
+        {
+          "id": "150378222515651070",
+          "lead": "元祖・無限シリーズ！",
+          "title": "無限ピーマン",
+          "description": "人気の無限シリーズの元祖、無限ピーマンをご紹介♪混ぜてレンジでチンするだけでごはんが止まらないおかずに♪ピーマンを大量消費したい時におすすめの一品です。夜ご飯の副菜やお弁当のおかずにぜひお試しください！",
+          "calorie": "189kcal/人",
+          "cooking_time": "調理時間 約5分",
+          "rect_video": {
+            "video_url": "https://media.delishkitchen.tv/recipe/150378222515651059/0.m3u8",
+            "poster_url": "https://image.delishkitchen.tv/recipe/150378222515651059/0.jpg?version=1624420181"
+          },
+          "square_video": {
+            "video_url": "https://media.delishkitchen.tv/recipe/150378222515651059/1.m3u8",
+            "poster_url": "https://image.delishkitchen.tv/recipe/150378222515651059/1.jpg?version=1624420181"
+          }
+        },
+        {
+          "id": "142240930903097840",
+          "lead": "美味しさハズレなし！",
+          "title": "ピーマン肉詰め",
+          "description": "ジューシーなお肉をピーマンにたっぷり詰めてオイスターソースのたれで絡めた人気の甘辛いピーマンの肉詰めをご紹介します。ピーマンが旬な夏はさらに絶品に♪簡単に作れる自家製タレも嬉しいですね。お弁当にも晩ご飯のおかずにもぴったりなピーマン肉詰めを是非作ってみてください！",
+          "calorie": "303kcal/人",
+          "cooking_time": "調理時間 約30分",
+          "rect_video": {
+            "video_url": "https://media.delishkitchen.tv/recipe/142240930903097843/0.m3u8",
+            "poster_url": "https://image.delishkitchen.tv/recipe/142240930903097843/0.jpg?version=1625453042"
+          },
+          "square_video": {
+            "video_url": "https://media.delishkitchen.tv/recipe/142240930903097843/1.m3u8",
+            "poster_url": "https://image.delishkitchen.tv/recipe/142240930903097843/1.jpg?version=1625453042"
+          }
+        }
+      ]
+    }
+  ],
+  "total_data_num": 2,
+  "current_page_num": 1,
+  "total_page_num": 1,
+  "page_has_next": "1",
+  "page_per_size": 1,
+  "total_size": 1,
+  "notice_details": []
+}

@@ -1,0 +1,138 @@
+{
+  "status_code": "N-00001",
+  "message": "正常終了しました。",
+  "front_message": "正常終了しました。",
+  "error_details": [],
+  "data": [
+    {
+      "id": "150378222515651070",
+      "lead": "レンジでお手軽♪",
+      "title": "ピーマンの肉詰め照りマヨソース",
+      "description": "定番おかずのピーマンの肉詰めがレンジで出来る、忙しい時におすすめのレシピ！とろみのついた照り焼きのたれもレンジで作り、ごはんの進む味付けにしました。照りマヨのこってりとした味わいは後を引くおいしさです。",
+      "cooking_time": "調理時間 約15分",
+      "calorie": "310kcal/人",
+      "rect_video": {
+        "video_url": "https://media.delishkitchen.tv/recipe/244693784284103731/0.m3u8",
+        "poster_url": "https://image.delishkitchen.tv/recipe/244693784284103731/0.jpg?version=1638860334"
+      },
+      "square_video": {
+        "video_url": "https://media.delishkitchen.tv/recipe/244693784284103731/1.m3u8",
+        "poster_url": "https://image.delishkitchen.tv/recipe/244693784284103731/1.jpg?version=1638860334"
+      },
+      "servings": "2人分",
+      "ingredient_groups": [
+        {
+          "name": null,
+          "ingredients": [
+            {
+              "name": "豚ひき肉",
+              "servings": "150g"
+            },
+            {
+              "name": "ピーマン",
+              "servings": "3個"
+            },
+            {
+              "name": "玉ねぎ",
+              "servings": "1/4個"
+            },
+            {
+              "name": "片栗粉(ピーマン用)",
+              "servings1": "大さじ1"
+            }
+          ]
+        },
+        {
+          "name": "☆肉だね調味料",
+          "ingredients": [
+            {
+              "name": "酒",
+              "servings": "大さじ1"
+            },
+            {
+              "name": "塩",
+              "servings": "小さじ1/4"
+            },
+            {
+              "name": "おろししょうが",
+              "servings": "小さじ1/4"
+            }
+          ]
+        },
+        {
+          "name": "★照り焼きのたれ",
+          "ingredients": [
+            {
+              "name": "酒",
+              "servings": "大さじ1"
+            },
+            {
+              "name": "みりん",
+              "servings": "大さじ1"
+            },
+            {
+              "name": "砂糖",
+              "servings": "大さじ1/2"
+            },
+            {
+              "name": "しょうゆ",
+              "servings": "大さじ1"
+            },
+            {
+              "name": "片栗粉",
+              "servings": "小さじ1/2"
+            }
+          ]
+        },
+        {
+          "name": "トッピング",
+          "ingredients": [
+            {
+              "name": "マヨネーズ",
+              "servings": "大さじ1"
+            }
+          ]
+        }
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "description": "ピーマンは縦半分に切り、種とへたを取り除く。玉ねぎはみじん切りにする。耐熱容器に入れてふんわりとラップをし、600Wのレンジで30秒加熱して粗熱をとる。",
+          "point": ""
+        },
+        {
+          "step": 2,
+          "description": "ボウルに豚ひき肉、玉ねぎ、☆を入れて粘りが出るまで混ぜる(肉だね)。",
+          "point": ""
+        },
+        {
+          "step": 3,
+          "description": "耐熱容器にピーマンを並べて片栗粉(ピーマン用)をふる。肉だねを1/6量ずつピーマンに詰める(ピーマンの肉詰め)。",
+          "point": ""
+        },
+        {
+          "step": 4,
+          "description": "ふんわりとラップをし、600Wのレンジで6分加熱する。ラップをしたまま1分おいて肉に火を通す。",
+          "point": "レンジの加熱時間は目安としていただき、様子をみながら調整してください。"
+        },
+        {
+          "step": 5,
+          "description": "別の耐熱容器に★を入れて混ぜ、ふんわりとラップをして600Wのレンジで1分加熱する。取り出して混ぜ、とろみをつける(照り焼きのたれ)。",
+          "point": ""
+        },
+        {
+          "step": 6,
+          "description": "器にピーマンの肉詰めを盛り、照り焼きのたれ、マヨネーズをかける。",
+          "point": ""
+        }
+      ]
+    }
+  ],
+  "total_data_num": 1,
+  "current_page_num": 1,
+  "total_page_num": 1,
+  "page_has_next": null,
+  "page_per_size": null,
+  "total_size": null,
+  "notice_details": []
+}

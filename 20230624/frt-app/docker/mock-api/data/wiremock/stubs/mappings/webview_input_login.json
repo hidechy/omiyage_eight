@@ -1,0 +1,48 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPath": "/login-id/input",
+    "queryParameters": {
+      "toparam": {
+        "or": [
+          {
+            "equalTo": "7idlogin"
+          },
+          {
+            "absent": true
+          }
+        ]
+      },
+      "sitecd": {
+        "or": [
+          {
+            "matches": "^[0-9]+$"
+          },
+          {
+            "absent": true
+          }
+        ]
+      },
+      "r_url": {
+        "or": [
+          {
+            "matches": "^.+$"
+          },
+          {
+            "absent": true
+          }
+        ]
+      }
+    }
+  },
+  "response": {
+    "status": 200,
+    "bodyFileName": "webview/login_id.html",
+    "headers": {
+      "Content-Type": "text/html; charset=UTF-8"
+    },
+    "transformers": [
+      "response-template"
+    ]
+  }
+}

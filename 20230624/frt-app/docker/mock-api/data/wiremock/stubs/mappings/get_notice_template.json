@@ -1,0 +1,25 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPath": "/notices",
+    "queryParameters": {
+      "shop_code": {
+        "matches": "^[0-9]{5}$"
+      },
+      "notification_type": {
+        "matches": "^[a-z]*.[a-z]*.[a-z]*$"
+      }
+    }
+  },
+  "response": {
+    "status": 200,
+    "bodyFileName": "notice/get_notice_200_normal.json",
+    "headers": {
+      "Content-Type": "application/json; charset=UTF-8",
+      "Set-Cookie": "X-IYNS-LOGIN-TOKEN=wiremock-test"
+    },
+    "transformers": [
+      "response-template"
+    ]
+  }
+}

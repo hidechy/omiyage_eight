@@ -1,0 +1,334 @@
+{
+  "project_info": {
+    "project_number": "452951127823",
+    "project_id": "iy-netsuper-dxe",
+    "storage_bucket": "iy-netsuper-dxe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:452951127823:android:855ea866ff2feaf9b4707a",
+        "android_client_info": {
+          "package_name": "jp.co.lightcafe.iynetsuper.local"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "452951127823-9h36q16hj6e9fdbaau30kkd41ld3tbc9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA039PZHychZkm7mvTAstmZ71QRZ70UJxE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "452951127823-9h36q16hj6e9fdbaau30kkd41ld3tbc9.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "452951127823-05baflt8opi3e9er9976976ajmq4bp5h.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "jp.itoyokado.netsuper.stg1"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:452951127823:android:bbe65eadc1e3becfb4707a",
+        "android_client_info": {
+          "package_name": "jp.co.lightcafe.iynetsuper.mock"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "452951127823-9h36q16hj6e9fdbaau30kkd41ld3tbc9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA039PZHychZkm7mvTAstmZ71QRZ70UJxE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "452951127823-9h36q16hj6e9fdbaau30kkd41ld3tbc9.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "452951127823-05baflt8opi3e9er9976976ajmq4bp5h.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "jp.itoyokado.netsuper.stg1"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:452951127823:android:95b092a09fc79015b4707a",
+        "android_client_info": {
+          "package_name": "jp.co.lightcafe.iynetsuper.stg1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "452951127823-9h36q16hj6e9fdbaau30kkd41ld3tbc9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA039PZHychZkm7mvTAstmZ71QRZ70UJxE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "452951127823-9h36q16hj6e9fdbaau30kkd41ld3tbc9.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "452951127823-05baflt8opi3e9er9976976ajmq4bp5h.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "jp.itoyokado.netsuper.stg1"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:452951127823:android:f286b8bd216a2ee6b4707a",
+        "android_client_info": {
+          "package_name": "jp.co.lightcafe.iynetsuper.stg2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "452951127823-9h36q16hj6e9fdbaau30kkd41ld3tbc9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA039PZHychZkm7mvTAstmZ71QRZ70UJxE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "452951127823-9h36q16hj6e9fdbaau30kkd41ld3tbc9.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "452951127823-05baflt8opi3e9er9976976ajmq4bp5h.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "jp.itoyokado.netsuper.stg1"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:452951127823:android:0226a3aedac566deb4707a",
+        "android_client_info": {
+          "package_name": "jp.co.lightcafe.iynetsuper.stg3"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "452951127823-9h36q16hj6e9fdbaau30kkd41ld3tbc9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA039PZHychZkm7mvTAstmZ71QRZ70UJxE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "452951127823-9h36q16hj6e9fdbaau30kkd41ld3tbc9.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "452951127823-05baflt8opi3e9er9976976ajmq4bp5h.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "jp.itoyokado.netsuper.stg1"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:452951127823:android:fffaf2c487a0b205b4707a",
+        "android_client_info": {
+          "package_name": "jp.itoyokado.netsuper"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "452951127823-9h36q16hj6e9fdbaau30kkd41ld3tbc9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA039PZHychZkm7mvTAstmZ71QRZ70UJxE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "452951127823-9h36q16hj6e9fdbaau30kkd41ld3tbc9.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "452951127823-05baflt8opi3e9er9976976ajmq4bp5h.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "jp.itoyokado.netsuper.stg1"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:452951127823:android:62ea10d83fd48fdeb4707a",
+        "android_client_info": {
+          "package_name": "jp.itoyokado.netsuper.local"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "452951127823-9h36q16hj6e9fdbaau30kkd41ld3tbc9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA039PZHychZkm7mvTAstmZ71QRZ70UJxE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "452951127823-9h36q16hj6e9fdbaau30kkd41ld3tbc9.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "452951127823-05baflt8opi3e9er9976976ajmq4bp5h.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "jp.itoyokado.netsuper.stg1"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:452951127823:android:0d029339cfd4286bb4707a",
+        "android_client_info": {
+          "package_name": "jp.itoyokado.netsuper.stg1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "452951127823-9h36q16hj6e9fdbaau30kkd41ld3tbc9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA039PZHychZkm7mvTAstmZ71QRZ70UJxE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "452951127823-9h36q16hj6e9fdbaau30kkd41ld3tbc9.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "452951127823-05baflt8opi3e9er9976976ajmq4bp5h.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "jp.itoyokado.netsuper.stg1"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:452951127823:android:1bcb9cf4fd555360b4707a",
+        "android_client_info": {
+          "package_name": "jp.itoyokado.netsuper.stg2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "452951127823-9h36q16hj6e9fdbaau30kkd41ld3tbc9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA039PZHychZkm7mvTAstmZ71QRZ70UJxE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "452951127823-9h36q16hj6e9fdbaau30kkd41ld3tbc9.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "452951127823-05baflt8opi3e9er9976976ajmq4bp5h.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "jp.itoyokado.netsuper.stg1"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

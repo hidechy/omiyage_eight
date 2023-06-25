@@ -1,0 +1,37 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPathPattern": "/products/recommended",
+    "queryParameters": {
+      "shop_code": {
+        "matches": "^[0-9]{5}$"
+      },
+      "recommend_type": {
+        "matches": "^[0-9]{1}$"
+      },
+      "front_div": {
+        "equalTo": "3"
+      },
+      "page": {
+        "matches": "^[0-9]{1}$"
+      },
+      "view_count": {
+        "matches": "^[0-9]{1,2}$"
+      },
+      "regular_shipment_product_only_flag": {
+        "matches": "0"
+      }
+    }
+  },
+  "response": {
+    "status": 200,
+    "bodyFileName": "products/recommended/get_recommended_product_200_type_is_{{request.query.recommend_type}}.json",
+    "headers": {
+      "Content-Type": "application/json; charset=UTF-8",
+      "Set-Cookie": "X-IYNS-LOGIN-TOKEN=wiremock-test"
+    },
+    "transformers": [
+      "response-template"
+    ]
+  }
+}

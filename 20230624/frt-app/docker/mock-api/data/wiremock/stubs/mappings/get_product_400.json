@@ -1,0 +1,66 @@
+{
+  "priority": 10,
+  "request": {
+    "method": "GET",
+    "urlPath": "/products",
+    "queryParameters": {
+      "shop_code": {
+        "matches": "^[0-9]{5}$"
+      },
+      "front_div": {
+        "matches": "^[1-3]{1}$"
+      },
+      "product_div": {
+        "matches": "^[1-2]{1}$"
+      },
+      "page": {
+        "matches": "^[0-9]+$"
+      },
+      "view_count": {
+        "matches": "^[0-9]+$"
+      },
+      "search_condition": {
+        "matches": "^[1-2]{1}$"
+      },
+      "sort_number": {
+        "matches": "^[0-3]{1}$"
+      },
+      "display_new_tax_price_flag": {
+        "matches": "^[0-1]{1}$"
+      },
+      "regular_shipment_product_only_flag": {
+        "matches": "^[0-1]{1}$"
+      },
+      "search_word": {
+        "or": [
+          {
+            "matches": "^.+$"
+          },
+          {
+            "absent": true
+          }
+        ]
+      },
+      "cart_id": {
+        "or": [
+          {
+            "matches": "^[1-9][0-9]{0,7}$"
+          },
+          {
+            "absent": true
+          }
+        ]
+      }
+    }
+  },
+  "response": {
+    "status": 400,
+    "bodyFileName": "products/get_products_400.json",
+    "headers": {
+      "Content-Type": "application/json; charset=UTF-8"
+    },
+    "transformers": [
+      "response-template"
+    ]
+  }
+}

@@ -1,0 +1,286 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+default_platform(:ios)
+
+platform :ios do
+  desc "match Update"
+  lane :match_update do |options|
+    typeName = options[:type]
+    isReadOnlyFlag = options[:isReadOnly]
+
+    if typeName == "development"
+      gitUrl = ENV["FL_MATCH_GIT_URL_DEV"]
+      ENV["MATCH_PASSWORD"] = ENV["FL_MATCH_PASSWORD_DEV"]
+    else
+      gitUrl = ENV["FL_MATCH_GIT_URL"]
+      ENV["MATCH_PASSWORD"] = ENV["FL_MATCH_PASSWORD"]
+    end
+
+    if isReadOnlyFlag
+      match(
+        type: typeName,
+        git_url: gitUrl,
+        readonly: isReadOnlyFlag,
+        force_for_new_devices: true,
+      )
+    else
+      apiKey = app_store_connect_api_key(
+        key_id: ENV['FL_ASC_KEY_ID'],
+        issuer_id: ENV['FL_ASC_ISSUER_ID'],
+        key_content: ENV['FL_ASC_KEY_CONTENT'],
+      )
+      match(
+        type: typeName,
+        git_url: gitUrl,
+        readonly: isReadOnlyFlag,
+        force_for_new_devices: true,
+        api_key: apiKey,
+      )
+    end
+  end
+
+  desc "Build"
+  lane :build do |options|
+    # 変数代入
+    isReleaseFlag = options[:isRelease]
+    flavorName = options[:flavor]
+    isMatchReadOnly = !options[:isCi]
+    isDistributeStoreFlag = options[:isDistributeStore]
+    gitCommentValue = options[:gitComment]
+
+    # 証明書・プロファイルの更新(本番環境以外はLC環境を使用。その場合matchは使用せず手動管理を行う運用)
+    if flavorName == "production"
+      match_update(
+        type: "development",
+        isReadOnly: isMatchReadOnly,
+      )
+      match_update(
+        type: "adhoc",
+        isReadOnly: isMatchReadOnly,
+      )
+      match_update(
+        type: "appstore",
+        isReadOnly: isMatchReadOnly,
+      )
+    end
+
+    # アプリケーションのビルド
+    build_main(
+      isRelease: isReleaseFlag,
+      flavor: flavorName,
+      isDistributeStore: isDistributeStoreFlag
+    )
+
+    if isDistributeStoreFlag
+      # ストアへの配布
+      distribute_store()
+    else
+      # 検証端末への配布
+      distribute_phone(
+        flavor: flavorName,
+        gitComment: gitCommentValue,
+      )
+    end
+
+    # Slackへの通知
+    notice_slack(
+      isSuccess: true,
+      message: gitCommentValue,
+    )
+  end
+
+  desc "Build Main"
+  private_lane :build_main do |options|
+    isReleaseFlag = options[:isRelease]
+    flavorName = options[:flavor]
+    isDistributeStoreFlag = options[:isDistributeStore]
+    entryPoint = "lib/main_" + flavorName + ".dart"
+    keychainPasswordValue = ENV["FL_KEYCHAIN_PASSWORD"]
+
+    if isReleaseFlag
+      buildConfig = "--release"
+      gymConfig = "Release" + "-" + flavorName
+    else
+      buildConfig = "--debug"
+      gymConfig = "Debug" + "-" + flavorName
+    end
+
+    if flavorName == "production"
+      gaTrackerIdValue = ENV["FL_GA_TRACKER_ID"]
+      googleMapApiKeyValue = ENV["FL_GOOGLE_MAP_IOS_API_KEY"]
+
+      if isDistributeStoreFlag
+        profileName = "AppStore"
+        methodName = "app-store"
+      else
+        profileName = "AdHoc"
+        methodName = "ad-hoc"
+      end
+
+      profileKey = "jp.itoyokado.netsuper"
+      profileValue = "match " + profileName + " jp.itoyokado.netsuper"
+    else
+      gaTrackerIdValue = ENV["FL_GA_TRACKER_ID_DEV"]
+      googleMapApiKeyValue = ENV["FL_GOOGLE_MAP_IOS_API_KEY_DEV"]
+      methodName = "enterprise"
+
+      profileKey = "jp.co.lightcafe.iy-netsuper." + flavorName
+      profileValue = "Netsuper lc_" + flavorName
+    end
+
+    gaTrackerId = "--dart-define=GA_TRACKER_ID=" + gaTrackerIdValue
+    googleMapApiKey = "--dart-define=IOS_GOOGLE_MAP_API_KEY=" + googleMapApiKeyValue
+    adjustAppToken = "--dart-define=ADJUST_APP_TOKEN=" + ENV["FL_ADJUST_APP_TOKEN"]
+    outputPath = "../build/ios"
+
+    unlock_keychain(
+      path: "login.keychain",
+      password: keychainPasswordValue,
+    )
+
+    sh("pod", "repo", "update")
+    sh("flutter", "clean")
+    sh("flutter", "pub", "get")
+    sh("flutter", "analyze")
+    sh(
+      "flutter",
+      "build",
+      "ios",
+      buildConfig,
+      "--flavor",
+      flavorName,
+      "-t",
+      entryPoint,
+      gaTrackerId,
+      googleMapApiKey,
+      adjustAppToken,
+    )
+
+    gym(
+      workspace: "Runner.xcworkspace",
+      configuration: gymConfig,
+      scheme: flavorName,
+      clean: true,
+      output_directory: outputPath,
+      export_method: methodName,
+      export_options: {
+        method: methodName,
+        provisioningProfiles: {
+          profileKey =>profileValue,
+        },
+      },
+    )
+  end
+
+  desc "Distribute App To Phone"
+  private_lane :distribute_phone do |options|
+    flavorName = options[:flavor]
+    gitCommentValue = options[:gitComment]
+    firebaseCliToken = ENV["FL_FIREBASE_CLI_TOKEN_DEV"]
+    groups = "BTC, DXE_APP, DXE_DESIGN, DXE_QA, DXE_SPEC, HD"
+
+    case flavorName
+    when "local" then
+      appId = "1:452951127823:ios:1a17f273e6247ddfb4707a"
+      groups = "DXE_APP"
+    when "mock" then
+      appId = "1:452951127823:ios:9c69b373845c2312b4707a"
+      groups = "DXE_APP"
+    when "stg1" then
+      appId = "1:452951127823:ios:3fc9bad8ad0543b3b4707a"
+    when "stg2" then
+      appId = "1:452951127823:ios:1f7ff027eec69a6fb4707a"
+    when "stg3" then
+      appId = "1:452951127823:ios:50a22d04c9b5c704b4707a"
+    when "stg4" then
+      appId = "1:452951127823:ios:3e119bb0a16551f1b4707a"
+    when "stg1_inspection" then
+      appId = "1:1050895371565:ios:36c0995b9bf2199d4757a4"
+      # HDメアドで作成したFirebaseのトークンを使用する
+      firebaseCliToken = ENV["FL_FIREBASE_CLI_TOKEN"]
+    when "stg2_inspection" then
+      appId = "1:1050895371565:ios:fcc46d40c0bb42d54757a4"
+      # HDメアドで作成したFirebaseのトークンを使用する
+      firebaseCliToken = ENV["FL_FIREBASE_CLI_TOKEN"]
+    when "stg3_inspection" then
+      appId = "1:1050895371565:ios:6bd36662eaf048de4757a4"
+      # HDメアドで作成したFirebaseのトークンを使用する
+      firebaseCliToken = ENV["FL_FIREBASE_CLI_TOKEN"]
+    when "stg4_inspection" then
+      appId = "1:1050895371565:ios:939449459f89ccdc4757a4"
+      # HDメアドで作成したFirebaseのトークンを使用する
+      firebaseCliToken = ENV["FL_FIREBASE_CLI_TOKEN"]
+    when "production" then
+      appId = "1:452951127823:ios:9facca8464c3c9f4b4707a"
+      groups = "DXE_APP"
+    else
+      raise(StandardError, "不正なflavorNameです：" + flavorName)
+    end
+
+    ipaPath = "../build/ios/Runner.ipa"
+
+    firebase_app_distribution(
+      app: appId,
+      firebase_cli_token: firebaseCliToken,
+      ipa_path: ipaPath,
+      groups: groups,
+      release_notes: gitCommentValue,
+    )
+  end
+
+  desc "Distribute App To Store"
+  private_lane :distribute_store do |options|
+    apiKey = app_store_connect_api_key(
+      key_id: ENV['FL_ASC_KEY_ID'],
+      issuer_id: ENV['FL_ASC_ISSUER_ID'],
+      key_content: ENV['FL_ASC_KEY_CONTENT'],
+    )
+    upload_to_app_store(
+      skip_binary_upload: false, # IPAファイルのアップロードをするかどうか
+      skip_screenshots: true,    # スクリーンショットのアップロードをするかどうか
+      skip_metadata: true,       # メタデータのアップロードをするかどうか
+      submit_for_review: false,  # Appleの審査に提出するかどうか
+      automatic_release: false,  # Appleの審査後にこのバージョンを自動的にリリースするかどうか
+      force: true,               # プレビューできなくても強制実行するかどうか
+      api_key: apiKey,           # App Store Connect APIキー
+      precheck_include_in_app_purchases: false, # アプリ内課金の事前チェックをするかどうか
+    )
+  end
+
+  desc "Notice Slack"
+  private_lane :notice_slack do |options|
+    slackUrl = ENV["FL_SLACK_URL"]
+    isNoticeSlackValue = ENV["FL_IS_NOTICE_SLACK"]
+    isSuccessValue = options[:isSuccess]
+    messageValue = options[:message]
+
+    if isNoticeSlackValue == "true"
+      slack(
+        pretext: "【fastlane】ビルド結果(iOS版)",
+        message: messageValue,
+        success: isSuccessValue,
+        slack_url: slackUrl,
+      )
+    end
+  end
+
+  error do |lane, exception|
+    notice_slack(
+      isSuccess: false,
+      message: exception.message,
+    )
+  end
+end

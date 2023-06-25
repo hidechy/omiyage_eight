@@ -1,0 +1,22 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPath": "/delivery/addresses",
+    "queryParameters": {
+      "postal_number": {
+        "matches": "^[0-9\\_]+$"
+      }
+    }
+  },
+  "response": {
+    "status": 200,
+    "bodyFileName": "delivery/get_delivery_addresses_200_normal.json",
+    "headers": {
+      "Content-Type": "application/json; charset=UTF-8",
+      "Set-Cookie": "X-IYNS-LOGIN-TOKEN=wiremock-test"
+    },
+    "transformers": [
+      "response-template"
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPathPattern": "/products/([0-9]{13})/questions",
+    "queryParameters": {
+      "question_type": {
+        "matches": "^[a-z]*$"
+      },
+      "cart_id": {
+        "matches": "^[1-9][0-9]{0,7}$"
+      }
+    }
+  },
+  "response": {
+    "status": 200,
+    "bodyFileName": "products/product_id/questions/get_products_product_id_questions_{{request.query.question_type}}.json",
+    "headers": {
+      "Content-Type": "application/json; charset=UTF-8",
+      "Set-Cookie": "X-IYNS-LOGIN-TOKEN=wiremock-test"
+    },
+    "transformers": [
+      "response-template"
+    ]
+  }
+}

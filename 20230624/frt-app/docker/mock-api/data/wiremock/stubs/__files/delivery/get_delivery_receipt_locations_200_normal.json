@@ -1,0 +1,60 @@
+{
+  "status_code": "N-00001",
+  "total_data_num": 4,
+  "current_page_num": 1,
+  "total_page_num": 1,
+  "notice_details": [],
+  "front_message": "（フロントメッセージ）",
+  "message": "正常終了しました。",
+  "error_details": [],
+  "data": [
+    {
+      "shop_code": "00210",
+      "receipt_point_name": "セブン-イレブン西日暮里六丁目店",
+      "receipt_point_address": "東京都荒川区西日暮里６丁目５１－６",
+      "receipt_point_latitude": 35.736612,
+      "receipt_point_longitude": 139.768639,
+      "location_id": "recipt_point_unique_id_0000000000132",
+      "has_shop_receipt": false,
+      "has_locker_receipt": true,
+      "icon_type": "02",
+      "delivery_base_code": "0000"
+    },
+    {
+      "shop_code": "00209",
+      "receipt_point_name": "イトーヨーカドー 木場店",
+      "receipt_point_address": "東京都江東区木場１丁目５－３０",
+      "receipt_point_latitude": 35.666149,
+      "receipt_point_longitude": 139.8042,
+      "location_id": "recipt_point_unique_id_0000000000081",
+      "has_shop_receipt": true,
+      "has_locker_receipt": false,
+      "icon_type": "01",
+      "delivery_base_code": "0000"
+    },
+    {
+      "shop_code": "00248",
+      "receipt_point_name": "イトーヨーカドー 曳舟店",
+      "receipt_point_address": "東京都墨田区京島１丁目２－１",
+      "receipt_point_latitude": 35.717388,
+      "receipt_point_longitude": 139.817909,
+      "location_id": "recipt_point_unique_id_0000000000109",
+      "has_shop_receipt": true,
+      "has_locker_receipt": true,
+      "icon_type": "01",
+      "delivery_base_code": "0000"
+    },
+    {
+      "shop_code": "00126",
+      "receipt_point_name": "イトーヨーカドー 静岡店",
+      "receipt_point_address": "静岡県静岡市駿河区曲金３丁目１－５",
+      "receipt_point_latitude": 34.972413,
+      "receipt_point_longitude": 138.407206,
+      "location_id": "recipt_point_unique_id_0000000000038",
+      "has_shop_receipt": false,
+      "has_locker_receipt": false,
+      "icon_type": "01",
+      "delivery_base_code": "0000"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>動作確認用ページ</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=2">
+</head>
+<script>
+        function buttonClick(){
+            const event = new Event('appordercompleted');
+            document.dispatchEvent(event);
+            const customEvent = new CustomEvent('appPurchase', {detail:{
+			        'event': 'order_comp',
+			        'logintype': 'OmniUser',
+			        'shopcd': '00209',
+			        'ordertype': 'UpdOrder',
+			        'jutyudate': '2022/08/28 17:59:04',
+			        'sessionlastupddate': '2022/08/28 17:59:04',
+			        'transactionId': '98409416',
+			        'transactionAffiliation': '00209',
+			        'transactionTotal': 228,
+			        'transactionProducts': [
+			            {
+			                'sku': '4580114100507',
+		    	            'name': '国産　『顔が見えるたまご。』　まごころたまご　１パック（１０コ入）',
+			                'price': 228,
+			                'quantity': 1
+			            }
+				    ]
+		        }
+		    });
+            document.dispatchEvent(customEvent);
+        }
+    </script>
+<body>
+<form name="form">
+    <input type="button" value="ご注文を確定する" onclick="buttonClick()">
+</form>
+</body>
+</html>

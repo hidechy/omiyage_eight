@@ -1,0 +1,163 @@
+def localProperties = new Properties()
+def localPropertiesFile = rootProject.file('local.properties')
+if (localPropertiesFile.exists()) {
+    localPropertiesFile.withReader('UTF-8') { reader ->
+        localProperties.load(reader)
+    }
+}
+
+def flutterRoot = localProperties.getProperty('flutter.sdk')
+if (flutterRoot == null) {
+    throw new FileNotFoundException("Flutter SDK not found. Define location with flutter.sdk in the local.properties file.")
+}
+
+def flutterVersionCode = localProperties.getProperty('flutter.versionCode')
+if (flutterVersionCode == null) {
+    flutterVersionCode = '1'
+}
+
+def flutterVersionName = localProperties.getProperty('flutter.versionName')
+if (flutterVersionName == null) {
+    flutterVersionName = '1.0'
+}
+
+def keystoreProperties = new Properties()
+def keystorePropertiesFile = rootProject.file('key.properties')
+if (keystorePropertiesFile.exists()) {
+    keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+}
+
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'com.google.firebase.crashlytics'
+apply from: "$flutterRoot/packages/flutter_tools/gradle/flutter.gradle"
+
+// 環境配列を格納する配列
+def dartEnv = [
+        ANDROID_GOOGLE_MAP_API_KEY:''
+]
+// --dart-defineの読み込み
+dartEnv = dartEnv + project.property('dart-defines')
+        .split(',').
+        collectEntries { entry ->
+            def pair = new String(entry.decodeBase64(), 'UTF-8').split('=')
+            [(pair.first()): pair.last()]
+        }
+
+android {
+    compileSdkVersion 33
+
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+    }
+
+    defaultConfig {
+        // Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
+        minSdkVersion 28
+        targetSdkVersion 33
+        versionCode flutterVersionCode.toInteger()
+        versionName flutterVersionName
+        manifestPlaceholders = [GOOGLE_MAP_API_KEY:dartEnv.ANDROID_GOOGLE_MAP_API_KEY]
+    }
+
+    flavorDimensions "app"
+    productFlavors {
+
+        local {
+            applicationId "jp.co.lightcafe.iynetsuper"
+            dimension "app"
+            applicationIdSuffix ".local"
+        }
+
+        mock {
+            applicationId "jp.co.lightcafe.iynetsuper"
+            dimension "app"
+            applicationIdSuffix ".mock"
+        }
+
+        stg1 {
+            applicationId "jp.co.lightcafe.iynetsuper"
+            dimension "app"
+            applicationIdSuffix ".stg1"
+        }
+
+        stg1_inspection {
+            applicationId "jp.co.lightcafe.iynetsuper"
+            dimension "app"
+            applicationIdSuffix ".stg1"
+        }
+
+        stg2 {
+            applicationId "jp.co.lightcafe.iynetsuper"
+            dimension "app"
+            applicationIdSuffix ".stg2"
+        }
+
+        stg2_inspection {
+            applicationId "jp.co.lightcafe.iynetsuper"
+            dimension "app"
+            applicationIdSuffix ".stg2"
+        }
+
+        stg3 {
+            applicationId "jp.co.lightcafe.iynetsuper"
+            dimension "app"
+            applicationIdSuffix ".stg3"
+        }
+
+        stg3_inspection {
+            applicationId "jp.co.lightcafe.iynetsuper"
+            dimension "app"
+            applicationIdSuffix ".stg3"
+        }
+
+        stg4 {
+            applicationId "jp.co.lightcafe.iynetsuper"
+            dimension "app"
+            applicationIdSuffix ".stg4"
+        }
+
+        stg4_inspection {
+            applicationId "jp.co.lightcafe.iynetsuper"
+            dimension "app"
+            applicationIdSuffix ".stg4"
+        }
+
+        production {
+            applicationId "jp.itoyokado.netsuper"
+            dimension "app"
+        }
+    }
+
+    signingConfigs {
+        release {
+            keyAlias keystoreProperties['keyAlias']
+            keyPassword keystoreProperties['keyPassword']
+            storeFile keystoreProperties['storeFile'] ? file(keystoreProperties['storeFile']) : null
+            storePassword keystoreProperties['storePassword']
+        }
+    }
+
+    buildTypes {
+        release {
+            // Signing with the debug keys for now, so `flutter run --release` works.
+            signingConfig signingConfigs.release
+
+            // Flutterではリリースビルドの場合、デフォルトでProGuardを使用した「圧縮」「難読化」「最適化」が入る
+            // NativeWebViewでJavaScriptからFlutterネイティブのメソッドを呼び出せない不具合が発生したので
+            // ProGuardで対象のメソッド等を処理しないようにした
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+flutter {
+    source '../..'
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'com.google.android.gms:play-services-ads-identifier:18.0.1'
+    implementation 'com.android.installreferrer:installreferrer:2.2'
+}

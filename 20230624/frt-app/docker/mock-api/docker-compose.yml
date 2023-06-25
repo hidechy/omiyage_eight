@@ -1,0 +1,9 @@
+version: "3"
+services:
+  mock:
+    image: wiremock/wiremock:2.32.0
+    volumes:
+      - "./data/wiremock/stubs:/home/wiremock"
+    ports:
+      - "8080:8080"
+    command: --local-response-templating

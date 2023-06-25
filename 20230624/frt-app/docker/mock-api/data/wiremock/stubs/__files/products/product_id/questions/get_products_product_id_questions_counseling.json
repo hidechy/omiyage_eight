@@ -1,0 +1,22 @@
+{
+  "status_code": "N-00001",
+  "message": "正常終了しました。",
+  "error_details": [],
+  "data": [
+    {
+      "counseling_question": {
+        "counseling1": "1.現在、皮膚科にかかっている、または皮膚科に通院するようなトラブル(炎症やアトピー傾向等)を起こしている。",
+        "counseling2": "2.(1.がYESのとき)化粧品の使用について専門医に相談を許可を取っていますか？",
+        "counseling3": "3.肌はもともと敏感・不安定な方である。",
+        "counseling1_code": "3000008",
+        "counseling2_code": "3000009",
+        "counseling3_code": "3000010"
+      }
+    }
+  ],
+  "notice_details": [],
+  "total_data_num": 1,
+  "current_page_num": 1,
+  "total_page_num": 1,
+  "front_message": "（フロントメッセージ）"
+}

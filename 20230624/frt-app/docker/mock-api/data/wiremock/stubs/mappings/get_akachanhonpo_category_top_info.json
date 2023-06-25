@@ -1,0 +1,16 @@
+{
+  "request" : {
+    "method": "GET",
+    "urlPath": "/settings/info/akachanhonpo_category_top.json"
+  },
+  "response": {
+    "status": 200,
+    "bodyFileName": "json/akachanhonpo_category_top.json",
+    "headers": {
+      "Content-Type": "application/json; charset=UTF-8"
+    },
+    "transformers": [
+      "response-template"
+    ]
+  }
+}

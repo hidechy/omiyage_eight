@@ -1,0 +1,7 @@
+{
+  "iyns_api_base_url": "localhost:8080",
+  "iyns_base_url": "localhost:8080",
+  "iyns_auth_base_url": "localhost:8080",
+  "iyns_account_base_url": "localhost:8080",
+  "iyns_mile_program_base_url": "localhost:8080"
+}

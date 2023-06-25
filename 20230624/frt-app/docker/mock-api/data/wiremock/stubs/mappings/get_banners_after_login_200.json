@@ -1,0 +1,28 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPath": "/banners/after_login",
+    "queryParameters": {
+      "cart_id": {
+        "or": [
+          {
+            "matches": "^[0-9]{8}$"
+          },
+          {
+            "absent": true
+          }
+        ]
+      }
+    }
+  },
+  "response": {
+    "status": 200,
+    "bodyFileName": "banners/after_login/get_banners_after_login_200{{#matches request.query.cart_id '^[0-9]{8}$'}}_cart_id_{{request.query.cart_id}}{{/matches}}.json",
+    "headers": {
+      "Content-Type": "application/json; charset=UTF-8"
+    },
+    "transformers": [
+      "response-template"
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+<svg id="APP_icon_再生64" xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="長方形_2402" width="64" height="64" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="APP_icon_再生64-2" clip-path="url(#clip-path)">
+    <path id="パス_896" d="M55.648,28.762,18.091,7.08a3.738,3.738,0,0,0-5.609,3.239V53.683a3.737,3.737,0,0,0,5.609,3.238L55.648,35.239a3.74,3.74,0,0,0,0-6.477" transform="translate(0 0)" fill="#fff"/>
+  </g>
+</svg>

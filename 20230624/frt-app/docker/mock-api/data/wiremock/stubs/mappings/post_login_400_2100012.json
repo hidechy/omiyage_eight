@@ -1,0 +1,17 @@
+{
+  "priority": 20,
+  "request": {
+    "method": "POST",
+    "url": "/login"
+  },
+  "response": {
+    "status": 400,
+    "bodyFileName": "login/post_login_400_2100012.json",
+    "headers": {
+      "Content-Type": "application/json; charset=UTF-8"
+    },
+    "transformers": [
+      "response-template"
+    ]
+  }
+}

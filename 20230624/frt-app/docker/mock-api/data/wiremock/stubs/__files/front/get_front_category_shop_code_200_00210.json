@@ -1,0 +1,333 @@
+{
+  "status_code": "N-00001",
+  "message": "正常終了しました。",
+  "front_message": "（フロントメッセージ）",
+  "error_details": [],
+  "data": [
+    {
+      "category_level": 1,
+      "category_code": "20002",
+      "category_name": "野菜",
+      "category_thumbnail": null,
+      "sort_number": 1,
+      "children": [
+        {
+          "category_level": 3,
+          "category_code": "30024",
+          "category_name": "牛",
+          "category_thumbnail": "/static/images/categories/c_30024.jpg",
+          "sort_number": 1
+        }
+      ]
+    },
+    {
+      "category_level": 1,
+      "category_code": "20001",
+      "category_name": "果物",
+      "category_thumbnail": null,
+      "sort_number": 1,
+      "children": [
+        {
+          "category_level": 3,
+          "category_code": "30024",
+          "category_name": "牛",
+          "category_thumbnail": "/static/images/categories/c_30024.jpg",
+          "sort_number": 1
+        }
+      ]
+    },
+    {
+      "category_level": 1,
+      "category_code": "20003",
+      "category_name": "お肉",
+      "category_thumbnail": null,
+      "sort_number": 1,
+      "children": [
+        {
+          "category_level": 3,
+          "category_code": "30024",
+          "category_name": "牛",
+          "category_thumbnail": "/static/images/categories/c_30024.jpg",
+          "sort_number": 1
+        },
+        {
+          "category_level": 3,
+          "category_code": "30025",
+          "category_name": "豚",
+          "category_thumbnail": "/static/images/categories/c_30025.jpg",
+          "sort_number": 2
+        }
+      ]
+    },
+    {
+      "category_level": 1,
+      "category_code": "20004",
+      "category_name": "お魚",
+      "category_thumbnail": null,
+      "sort_number": 1,
+      "children": [
+        {
+          "category_level": 3,
+          "category_code": "30024",
+          "category_name": "牛",
+          "category_thumbnail": "/static/images/categories/c_30024.jpg",
+          "sort_number": 1
+        }
+      ]
+    },
+    {
+      "category_level": 1,
+      "category_code": "20021",
+      "category_name": "卵",
+      "category_thumbnail": null,
+      "sort_number": 1,
+      "children": [
+        {
+          "category_level": 3,
+          "category_code": "30024",
+          "category_name": "牛",
+          "category_thumbnail": "/static/images/categories/c_30024.jpg",
+          "sort_number": 1
+        }
+      ]
+    },
+    {
+      "category_level": 1,
+      "category_code": "20011",
+      "category_name": "乳製品（牛乳・ヨーグルト等）",
+      "category_thumbnail": null,
+      "sort_number": 1,
+      "children": [
+        {
+          "category_level": 3,
+          "category_code": "30024",
+          "category_name": "牛",
+          "category_thumbnail": "/static/images/categories/c_30024.jpg",
+          "sort_number": 1
+        }
+      ]
+    },
+    {
+      "category_level": 1,
+      "category_code": "10015",
+      "category_name": "冷凍・素材・アイス",
+      "category_thumbnail": null,
+      "sort_number": 1,
+      "children": [
+        {
+          "category_level": 3,
+          "category_code": "30024",
+          "category_name": "牛",
+          "category_thumbnail": "/static/images/categories/c_30024.jpg",
+          "sort_number": 1
+        }
+      ]
+    },
+    {
+      "category_level": 1,
+      "category_code": "20076",
+      "category_name": "豆腐・納豆・こんにゃく",
+      "category_thumbnail": null,
+      "sort_number": 1,
+      "children": [
+        {
+          "category_level": 3,
+          "category_code": "30024",
+          "category_name": "牛",
+          "category_thumbnail": "/static/images/categories/c_30024.jpg",
+          "sort_number": 1
+        }
+      ]
+    },
+    {
+      "category_level": 1,
+      "category_code": "20072",
+      "category_name": "お菓子",
+      "category_thumbnail": null,
+      "sort_number": 1,
+      "children": [
+        {
+          "category_level": 3,
+          "category_code": "30024",
+          "category_name": "牛",
+          "category_thumbnail": "/static/images/categories/c_30024.jpg",
+          "sort_number": 1
+        }
+      ]
+    },
+    {
+      "category_level": 1,
+      "category_code": "20007",
+      "category_name": "パン・ジャム・はちみつ",
+      "category_thumbnail": null,
+      "sort_number": 1,
+      "children": [
+        {
+          "category_level": 3,
+          "category_code": "30024",
+          "category_name": "牛",
+          "category_thumbnail": "/static/images/categories/c_30024.jpg",
+          "sort_number": 1
+        }
+      ]
+    },
+    {
+      "category_level": 1,
+      "category_code": "20006",
+      "category_name": "お米",
+      "category_thumbnail": null,
+      "sort_number": 1,
+      "children": [
+        {
+          "category_level": 3,
+          "category_code": "30024",
+          "category_name": "牛",
+          "category_thumbnail": "/static/images/categories/c_30024.jpg",
+          "sort_number": 1
+        }
+      ]
+    },
+    {
+      "category_level": 1,
+      "category_code": "20014",
+      "category_name": "麺・パスタ",
+      "category_thumbnail": null,
+      "sort_number": 1,
+      "children": [
+        {
+          "category_level": 3,
+          "category_code": "30024",
+          "category_name": "牛",
+          "category_thumbnail": "/static/images/categories/c_30024.jpg",
+          "sort_number": 1
+        }
+      ]
+    },
+    {
+      "category_level": 1,
+      "category_code": "20005",
+      "category_name": "惣菜",
+      "category_thumbnail": null,
+      "sort_number": 1,
+      "children": [
+        {
+          "category_level": 3,
+          "category_code": "30024",
+          "category_name": "牛",
+          "category_thumbnail": "/static/images/categories/c_30024.jpg",
+          "sort_number": 1
+        }
+      ]
+    },
+    {
+      "category_level": 1,
+      "category_code": "10001",
+      "category_name": "食品・調味料",
+      "category_thumbnail": null,
+      "sort_number": 1,
+      "children": [
+        {
+          "category_level": 3,
+          "category_code": "30024",
+          "category_name": "牛",
+          "category_thumbnail": "/static/images/categories/c_30024.jpg",
+          "sort_number": 1
+        }
+      ]
+    },
+    {
+      "category_level": 1,
+      "category_code": "10002",
+      "category_name": "飲料・酒",
+      "category_thumbnail": null,
+      "sort_number": 1,
+      "children": [
+        {
+          "category_level": 3,
+          "category_code": "30024",
+          "category_name": "牛",
+          "category_thumbnail": "/static/images/categories/c_30024.jpg",
+          "sort_number": 1
+        }
+      ]
+    },
+    {
+      "category_level": 1,
+      "category_code": "10005",
+      "category_name": "日用品・美容・化粧品",
+      "category_thumbnail": null,
+      "sort_number": 1,
+      "children": [
+        {
+          "category_level": 3,
+          "category_code": "30024",
+          "category_name": "牛",
+          "category_thumbnail": "/static/images/categories/c_30024.jpg",
+          "sort_number": 1
+        }
+      ]
+    },
+    {
+      "category_level": 1,
+      "category_code": "10004",
+      "category_name": "生活雑貨・キッチン・ペット",
+      "category_thumbnail": null,
+      "sort_number": 1,
+      "children": [
+        {
+          "category_level": 3,
+          "category_code": "30024",
+          "category_name": "牛",
+          "category_thumbnail": "/static/images/categories/c_30024.jpg",
+          "sort_number": 1
+        }
+      ]
+    },
+    {
+      "category_level": 1,
+      "category_code": "10009",
+      "category_name": "介護・健康・ベビー",
+      "category_thumbnail": null,
+      "sort_number": 1,
+      "children": [
+        {
+          "category_level": 2,
+          "category_code": "20910",
+          "category_name": "アカチャンホンポ",
+          "category_thumbnail": "/static/images/categories/c_30024.jpg",
+          "sort_number": 1
+        },
+        {
+          "category_level": 2,
+          "category_code": "20120",
+          "category_name": "育児雑貨",
+          "category_thumbnail": "/static/images/categories/c_30024.jpg",
+          "sort_number": 1
+        }
+      ]
+    },
+    {
+      "category_level": 1,
+      "category_code": "20900",
+      "category_name": "医薬品・医薬部外品",
+      "category_thumbnail": null,
+      "sort_number": 1,
+      "children": [
+        {
+          "category_level": 3,
+          "category_code": "30024",
+          "category_name": "牛",
+          "category_thumbnail": "/static/images/categories/c_30024.jpg",
+          "sort_number": 1
+        }
+      ]
+    }
+  ],
+  "total_data_num": 3,
+  "current_page_num": 0,
+  "total_page_num": 0,
+  "page_has_next": "1",
+  "page_per_size": 1,
+  "total_size": 1,
+  "notice_details": []
+}

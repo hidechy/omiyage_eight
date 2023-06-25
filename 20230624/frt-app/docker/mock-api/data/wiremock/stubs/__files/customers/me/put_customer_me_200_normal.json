@@ -1,0 +1,17 @@
+{
+  "status_code": "N-00001",
+  "message": "正常終了しました。",
+  "error_details": [],
+  "data": [
+    {
+      "prefecture_code": "01",
+      "city_code": "235",
+      "town_code": "072",
+      "chome_code": "001",
+      "address": "１番地",
+      "address2": "テストマンション",
+      "mail_send_type": "1",
+      "front_div": "1"
+    }
+  ]
+}

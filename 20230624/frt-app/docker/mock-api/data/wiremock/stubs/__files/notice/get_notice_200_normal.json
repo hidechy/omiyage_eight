@@ -1,0 +1,54 @@
+{
+  "status_code": "N-00001",
+  "message": "正常終了しました。",
+  "error_details": [],
+  "data": [
+    {
+      "shop_code": "00210",
+      "shop_name": "ネットスーパー西日暮里店",
+      "messages": [
+        {
+          "message_id": "9903",
+          "message_div": "important",
+          "title": "【重要なお知らせタイトル】",
+          "text": "重要なお知らせ内容",
+          "display_start_date": "2021-10-25T00:00:00+09:00",
+          "sort_num": 0
+        },
+        {
+          "message_id": "8087",
+          "message_div": "news",
+          "title": "【NEWSタイトル】",
+          "text": "NEWSの内容",
+          "display_start_date": "2021-10-25T00:00:00+09:00",
+          "sort_num": 0
+        },
+        {
+          "message_id": "9717",
+          "message_div": "shop",
+          "title": "【店舗からのお知らせタイトル】",
+          "text": "店舗からのお知らせ内容",
+          "display_start_date": "2021-08-10T00:00:00+09:00",
+          "sort_num": 0
+        },
+        {
+          "message_id": "9398",
+          "message_div": "urgent",
+          "title": "【緊急告知タイトル】",
+          "text": "緊急告知内容",
+          "display_start_date": "2022-01-01T00:00:00+09:00",
+          "sort_num": 0
+        }
+      ],
+      "important_notification": {
+        "is_delivery_control_one_week": true,
+        "area_code": "01_001_000_001"
+      }
+    }
+  ],
+  "notice_details": [],
+  "total_data_num": 1,
+  "current_page_num": 1,
+  "total_page_num": 1,
+  "front_message": "（フロントメッセージ）"
+}

@@ -1,0 +1,31 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPathPattern": "/delivery/(\\d{1,5})/delivery_restrictions",
+    "queryParameters": {
+      "chome_code": {
+        "matches": "^[0-9\\_]+$"
+      },
+      "city_code": {
+        "matches": "^[0-9\\_]+$"
+      },
+      "prefecture_code": {
+        "matches": "^[0-9\\_]+$"
+      },
+      "town_code": {
+        "matches": "^[0-9\\_]+$"
+      }
+    }
+  },
+  "response": {
+    "status": 200,
+    "bodyFileName": "delivery/get_delivery_shop_code_delivery_restrictions_200_normal.json",
+    "headers": {
+      "Content-Type": "application/json; charset=UTF-8",
+      "Set-Cookie": "X-IYNS-LOGIN-TOKEN=wiremock-test"
+    },
+    "transformers": [
+      "response-template"
+    ]
+  }
+}

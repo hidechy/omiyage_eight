@@ -1,0 +1,29 @@
+{
+  "priority": 1,
+  "request": {
+    "method": "GET",
+    "urlPath": "/categories",
+    "queryParameters": {
+      "category_type": {
+        "matches": "^[a-z_]+$"
+      },
+      "shop_code": {
+        "matches": "^[0-9]{5}$"
+      },
+      "target_code": {
+        "matches": "^30000$"
+      }
+    }
+  },
+  "response": {
+    "status": 404,
+    "bodyFileName": "categories/get_categories_404_30000_E-00006.json",
+    "headers": {
+      "Content-Type": "application/json; charset=UTF-8",
+      "Set-Cookie":"X-IYNS-LOGIN-TOKEN=wiremock-test"
+    },
+    "transformers": [
+      "response-template"
+    ]
+  }
+}

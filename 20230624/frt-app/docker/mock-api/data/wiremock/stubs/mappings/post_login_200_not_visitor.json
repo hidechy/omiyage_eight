@@ -1,0 +1,17 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/login"
+  },
+  "response": {
+    "status": 200,
+    "bodyFileName": "login/post_login_200.json",
+    "headers": {
+      "Content-Type": "application/json; charset=UTF-8",
+      "Set-Cookie": "x-iyns-login-token={{randomValue type='UUID'}}"
+    },
+    "transformers": [
+      "response-template"
+    ]
+  }
+}

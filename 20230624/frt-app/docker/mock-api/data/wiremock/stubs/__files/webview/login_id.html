@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html class="is-ios" lang="ja">
+<head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="７ｉＤはセブン＆アイグループの各種サービスで使える共通の会員です。７ｉＤを利用するとセブン＆アイグループ店舗の各アプリや、総合通販サイトオムニ7でおトクにお買い物ができます。お買い物をするとセブンマイルプログラムでマイルが貯まり、ｎａｎａｃｏカードと連携することでさらにお得に！"
+          name="description">
+    <link href="https://auth5.7id.st-omni7.jp/assets/css/style.css?version=v1.0.21" rel="stylesheet">
+    <title>７ｉＤアカウントサービス｜ログイン：７ｉＤ入力</title>
+</head>
+<body>
+<div class="container">
+
+    <!-- ヘッダー -->
+
+    <header class="header header--fixed">
+        <div>
+            <h1 class="header__logo"><a class="header__logo-link" href="#">
+                <img alt="７ｉＤ" class="header__logo-image"
+                     src="https://auth5.7id.st-omni7.jp/assets/img/common/logo-7-id-l.png?version=v1.0.21"></a></h1>
+        </div>
+
+        <div class="header__button-container">
+            <div class="header__button">
+                <button class="menu-button-open"></button>
+            </div>
+        </div>
+
+    </header>
+    <div class="header-space"></div>
+
+    <!-- / ヘッダー -->
+
+    <!-- コンテンツ -->
+    <form action="/login-password/input?r_url={{urlEncode request.query.r_url}}" autocomplete="off" class="js-form"
+          id="sevIdInputForm"
+          method="post">
+        <div class="container-fit-container">
+            <div class="container-fit" style="min-height: 788px;">
+                <div class="container-fit__main">
+                    <section class="section-type02">
+                        <h2 class="title-lv2-type02">
+                            <img alt="" class="title-lv2-type02__icon"
+                                 src="https://auth5.7id.st-omni7.jp/assets/img/common/icon-gray-password.png?version=v1.0.21">
+                            <span class="title-lv2-type02__text">ログイン</span>
+                        </h2>
+
+                        <!-- 全画面共通エラー -->
+                        <div class="common-error">
+
+                        </div>
+                        <!-- / 全画面共通エラー -->
+
+                        <div class="form-group-type01" data-max-length="256"
+                             data-validate-input="hankaku maxLength" data-validate-submit="required">
+                            <label class="form-group-type01__label" for="input-01">７ｉＤ（ログインID）</label>
+                            <input class="form-group-type01__input" id="input-01" inputmode="url" name="sveIdInput"
+                                   type="text" value="">
+                        </div>
+                        <p class="text-attention-lv2">ご登録の７ｉＤ（メールアドレスまたは任意文字列）でログインできます。</p>
+                        <p class="text-right-link">
+                            <a aria-controls="dialog-01" aria-haspopup="dialog" class="js-dialog-open">
+                                <span>７ｉＤをお忘れの方</span>
+                                <svg class="icon-arrow-gray" viewBox="0 0 16 19">
+                                    <use xlink:href="#icon-arrow"></use>
+                                </svg>
+                            </a>
+                        </p>
+                        <p class="text-right-link u-mt-16">
+                            <a href="#">はじめてご利用の方（新規会員登録について）
+                                <svg class="icon-arrow-gray" viewBox="0 0 16 19">
+                                    <use xlink:href="#icon-arrow"></use>
+                                </svg>
+                            </a>
+                        </p>
+
+                    </section>
+                </div>
+                <div class="container-fit__bottom">
+                    <button class="button button--submit" id="idLoginBtn" type="submit"><span class="button__inner">次へ進む</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </form>
+    <!-- / コンテンツ -->
+
+
+    <!-- フッター -->
+
+    <footer class="footer" id="footer">
+        <p class="footer__copyright">Copyright Seven &amp; i Holdings Co., Ltd. All Rights Reserved.</p>
+    </footer>
+
+    <!-- / フッター -->
+
+    <svg style="display:none">
+        <defs>
+            <symbol id="icon-arrow" viewBox="0 0 16 19">
+                <path d="M16 9.187L7.143 0 0 0 8.743 9.187 8.743 9.187 8.743 9.187 0 18.374 7.143 18.374z"
+                      fill-rule="evenodd"></path>
+            </symbol>
+            <symbol id="icon-external" viewBox="0 0 12 12">
+                <path d="M1.333 0C.605 0 0 .605 0 1.333v9.334C0 11.395.605 12 1.333 12h9.334c.728 0 1.333-.605 1.333-1.333V6h-1.333v4.667H1.333V1.333H6V0H1.333zm6 0v1.333h2.391L3.529 7.53l.942.942 6.196-6.195v2.39H12V0H7.333z"
+                      fill-rule="evenodd"></path>
+            </symbol>
+            <symbol id="icon-asterisk" viewBox="0 0 8 9">
+                <polygon fill="#FF0000" fill-rule="nonzero"
+                         points="15.04 12.056 14.464 8.84 16.936 10.904 17.8 9.464 14.824 8.336 17.896 7.136 16.96 5.744 14.488 7.784 15.04 4.616 13.264 4.616 13.816 7.784 11.344 5.744 10.408 7.136 13.48 8.336 10.48 9.464 11.344 10.904 13.84 8.84 13.264 12.056"
+                         transform="translate(-10.000000, -4.000000)"></polygon>
+            </symbol>
+            <symbol id="icon-alert" viewBox="0 0 16 14">
+                <path d="M8.711.282c.34.193.623.474.816.815l5.481 9.673c.59 1.04.224 2.36-.815 2.949-.326.184-.693.281-1.067.281H2.163C.97 14 0 13.031 0 11.837c0-.374.097-.741.281-1.067l5.482-9.673C6.352.057 7.672-.307 8.71.282zM7.657 9.715h-.024c-.521 0-.944.423-.944.944 0 .521.423.944.944.944h.024c.52 0 .943-.423.943-.944 0-.521-.422-.944-.943-.944zm-.012-6.37c-.032 0-.064.001-.096.005-.521.053-.9.518-.848 1.04L7.1 8.301c.029.28.264.493.546.493.281 0 .517-.213.546-.493l.398-3.913c.003-.032.004-.064.004-.096 0-.524-.424-.948-.948-.948z"
+                      fill-rule="evenodd"></path>
+            </symbol>
+            <symbol id="icon-attention" viewBox="0 0 14 14">
+                <g fill="none" fill-rule="evenodd">
+                    <circle cx="7" cy="7" fill="red" r="7"></circle>
+                    <path d="M6.944 9.37h.023c.522 0 .944.423.944.945 0 .52-.422.943-.944.943h-.023c-.521 0-.944-.422-.944-.943 0-.522.423-.944.944-.944zM6.956 3c.524 0 .948.425.948.949 0 .032-.001.064-.005.096l-.398 3.913c-.028.28-.264.493-.545.493-.282 0-.518-.213-.546-.493l-.398-3.913c-.053-.522.326-.987.848-1.04.032-.003.064-.005.096-.005z"
+                          fill="#FFF"
+                          fill-rule="nonzero"></path>
+                </g>
+            </symbol>
+        </defs>
+    </svg>
+</div>
+
+
+</body>
+</html>

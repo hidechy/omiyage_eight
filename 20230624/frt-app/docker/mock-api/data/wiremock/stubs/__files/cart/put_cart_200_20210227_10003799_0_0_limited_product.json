@@ -1,0 +1,27 @@
+{
+  "status_code": "N-00001",
+  "message": "正常終了しました。",
+  "front_message": "正常終了しました。",
+  "error_details": [],
+  "data": [
+    {
+      "delete_product_names": [
+        "サントリー　天然水　１ケース（２Ｌ×６本）",
+        "まごころ酪農３．６牛乳　１本（１０００ｍｌ）"
+      ],
+      "delivery_price_change_flag": "0",
+      "coupon_change_flag": "0",
+      "is_limited_delivery_product": true,
+      "limited_delivery_product_names": [
+        "サントリー　烏龍茶　１ケース（２Ｌ×６本）",
+        "カルビー　ポテトチップス　＜うすしお味＞　１袋（６０ｇ）"
+      ],
+      "warn_messages": [],
+      "cart": null
+    }
+  ],
+  "notice_details": [],
+  "total_data_num": 1,
+  "current_page_num": 1,
+  "total_page_num": 1
+}

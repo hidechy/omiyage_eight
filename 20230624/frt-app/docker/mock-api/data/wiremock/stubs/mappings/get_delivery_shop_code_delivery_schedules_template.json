@@ -1,0 +1,40 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPathPattern": "/delivery/(\\d{1,5})/delivery_schedules",
+    "queryParameters": {
+      "fulfillment_type": {
+        "or": [
+          {
+            "matches": "home_delivery/shipment"
+          },
+          {
+            "matches": "click_and_collect/pickup"
+          },
+          {
+            "absent": true
+          }
+        ]
+      },
+      "location_id": {
+        "or": [
+          {
+            "matches": "^[a-z0-9\\_]+$"
+          },
+          {
+            "absent": true
+          }
+        ]
+      }
+    }
+  },
+  "response": {
+    "status": 200,
+    "bodyFileName": "delivery/get_delivery_shop_code_delivery_schedules_200_{{request.path.[1]}}_{{request.query.location_id}}.json",
+    "headers": {
+      "Content-Type": "application/json; charset=UTF-8",
+      "Set-Cookie": "X-IYNS-LOGIN-TOKEN=wiremock-test"
+    },
+    "transformers": ["response-template"]
+  }
+}

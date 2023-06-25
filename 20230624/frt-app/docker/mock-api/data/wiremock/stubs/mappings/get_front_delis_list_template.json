@@ -1,0 +1,28 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPathPattern": "/front/delis/list",
+    "queryParameters": {
+      "q": {
+        "matches": ".{1,64}$"
+      },
+      "page": {
+        "matches": "^[0-9]{1}$"
+      },
+      "per": {
+        "matches": "^[0-9]{1,2}$"
+      }
+    }
+  },
+  "response": {
+    "status": 200,
+    "bodyFileName": "front/get_front_delis_list_200.json",
+    "headers": {
+      "Content-Type": "application/json; charset=UTF-8",
+      "Set-Cookie": "X-IYNS-LOGIN-TOKEN=wiremock-test"
+    },
+    "transformers": [
+      "response-template"
+    ]
+  }
+}

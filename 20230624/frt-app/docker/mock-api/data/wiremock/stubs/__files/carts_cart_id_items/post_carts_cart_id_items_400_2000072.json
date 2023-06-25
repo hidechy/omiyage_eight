@@ -1,0 +1,56 @@
+{
+  "message": "業務ルール違反エラーが発生しました。",
+  "page_per_size": null,
+  "status_code": "E-00007",
+  "error_details": [
+    {
+      "error_reason_substitute": [
+        {
+          "value": "症状に対応したものをお選びいただくか医師・薬剤師への相談をお勧めいたします",
+          "key": "{0}"
+        }
+      ],
+      "error_front_message": "こちらの医薬品の購入はできません。（症状に対応したものをお選びいただくか医師・薬剤師への相談をお勧めいたします）",
+      "error_reason": "こちらの医薬品の購入はできません。（{0}）",
+      "error_key": "products[0].medicine_answer.no_effect_flag",
+      "error_reason_code": "2000072"
+    },
+    {
+      "error_reason_substitute": [
+        {
+          "value": "同様の副作用が起きる可能性が高いため",
+          "key": "{0}"
+        }
+      ],
+      "error_front_message": "こちらの医薬品の購入はできません。（同様の副作用が起きる可能性が高いため）",
+      "error_reason": "こちらの医薬品の購入はできません。（{0}）",
+      "error_key": "products[0].medicine_answer.this_drug_side_effect_flag",
+      "error_reason_code": "2000072"
+    },
+    {
+      "error_reason_substitute": [
+        {
+          "value": "1",
+          "key": "{0}"
+        },
+        {
+          "value": "1",
+          "key": "{1}"
+        }
+      ],
+      "error_front_message": "指定の商品1件中、1件がお買い物カゴに追加できませんでした。",
+      "error_reason": "指定の商品{0}件中、{1}件がお買い物カゴに追加できませんでした。",
+      "error_key": "product_id",
+      "error_reason_code": "2000077"
+    }
+  ],
+  "clear_cart": null,
+  "data": null,
+  "total_size": null,
+  "total_data_num": 1,
+  "front_message": "業務ルール違反エラーが発生しました。※",
+  "total_page_num": 0,
+  "notice_details": null,
+  "page_has_next": null,
+  "current_page_num": 0
+}

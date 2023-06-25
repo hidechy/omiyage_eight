@@ -1,0 +1,144 @@
+{
+  "category_list":[
+    {
+      "category_name":"新着",
+      "category_code":"30455",
+      "file_name":"akahon-new.jpg"
+    },
+    {
+      "category_name":"おすすめ商品",
+      "category_code":"38620",
+      "file_name":"akahon-recommend.jpg"
+    },
+    {
+      "category_name":"おむつ",
+      "category_code":"38622",
+      "file_name":"akahon-diapers.jpg"
+    },
+    {
+      "category_name":"おしりふき",
+      "category_code":"38623",
+      "file_name":"akahon-wipes.jpg"
+    },
+    {
+      "category_name":"粉ミルク・液体ミルク",
+      "category_code":"38626",
+      "file_name":"akahon-formula.jpg"
+    },
+    {
+      "category_name":"水・飲料",
+      "category_code":"38627",
+      "file_name":"akahon-drink.jpg"
+    },
+    {
+      "category_name":"フード",
+      "category_code":"38628",
+      "file_name":"akahon-food.jpg"
+    },
+    {
+      "category_name":"お菓子",
+      "category_code":"38629",
+      "file_name":"akahon-sweets.jpg"
+    },
+    {
+      "category_name":"アレルギー配慮食品",
+      "category_code":"30308",
+      "file_name":"akahon-antiallergic-food.jpg"
+    },
+    {
+      "category_name":"授乳・調乳用品",
+      "category_code":"38630",
+      "file_name":"akahon-breastfeeding.jpg"
+    },
+    {
+      "category_name":"お食事用品",
+      "category_code":"38631",
+      "file_name":"akahon-tableware.jpg"
+    },
+    {
+      "category_name":"洗剤・洗濯用品",
+      "category_code":"38632",
+      "file_name":"akahon-laundry-supplies.jpg"
+    },
+    {
+      "category_name":"ベビーケア",
+      "category_code":"38634",
+      "file_name":"akahon-baby-care.jpg"
+    },
+    {
+      "category_name":"おまる・トイレトレーニング",
+      "category_code":"38633",
+      "file_name":"akahon-potty.jpg"
+    },
+    {
+      "category_name":"ママ向け食品・グッズ",
+      "category_code":"38625",
+      "file_name":"akahon-for-moms-goods.jpg"
+    },
+    {
+      "category_name":"おでかけグッズ",
+      "category_code":"38646",
+      "file_name":"akahon-go-out-goods.jpg"
+    },
+    {
+      "category_name":"室内用品・安全グッズ",
+      "category_code":"38635",
+      "file_name":"akahon-safety-goods.jpg"
+    },
+    {
+      "category_name":"ねんねグッズ",
+      "category_code":"38647",
+      "file_name":"akahon-sleeping-goods.jpg"
+    },
+    {
+      "category_name":"おもちゃ",
+      "category_code":"30451",
+      "file_name":"akahon-toy.jpg"
+    },
+    {
+      "category_name":"絵本・雑誌・CD・DVD",
+      "category_code":"30554",
+      "file_name":"akahon-media.jpg"
+    },
+    {
+      "category_name":"文具",
+      "category_code":"30200",
+      "file_name":"akahon-stationery.jpg"
+    },
+    {
+      "category_name":"通園グッズ",
+      "category_code":"38636",
+      "file_name":"akahon-kindergarten-goods.jpg"
+    }
+  ],
+  "store_list":[
+    {
+      "area" : "北海道",
+      "stores" : ["屯田店","アリオ札幌店"]
+    },
+    {
+      "area" : "東北",
+      "stores" : ["青森店","弘前店"]
+    },
+    {
+      "area" : "信越",
+      "stores" : ["アリオ上田店","南松本店"]
+    },
+    {
+      "area" : "関東",
+      "stores" : ["アリオ上尾店","和光店","大宮宮原店","アリオ川口店","アリオ深谷店","アリオ鷺宮店","幕張店","東久留米店","拝島店","アリオ亀有店","武蔵小金井店","アリオ北砂店","横浜別所店","立場店","アリオ橋本店","甲府昭和店","アリオ西新井店","アリオ市原店","武蔵小杉駅前店","グランツリー武蔵小杉店","古淵店","アリオ柏店","アリオ葛西店","四街道店"]
+    },
+    {
+      "area" : "東海",
+      "stores" : ["静岡店","三島店"]
+    },
+    {
+      "area" : "中京",
+      "stores" : ["赤池店","安城店"]
+    },
+    {
+      "area" : "関西",
+      "stores" : ["津久野店","アリオ八尾店","阿倍野店","甲子園店","明石店"]
+    }
+  ]
+}

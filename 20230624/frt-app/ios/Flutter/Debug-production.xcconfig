@@ -1,0 +1,5 @@
+#include "Generated.xcconfig"
+#include "Debug.xcconfig"
+FLUTTER_FLAVOR=production
+PRODUCT_BUNDLE_IDENTIFIER=jp.itoyokado.netsuper
+BUNDLE_NAME=ネットスーパー

@@ -1,0 +1,219 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+default_platform(:android)
+
+platform :android do
+  desc "Build"
+  lane :build do |options|
+    # 変数代入
+    isReleaseFlag = options[:isRelease]
+    flavorName = options[:flavor]
+    isDistributeStoreFlag = options[:isDistributeStore]
+    gitCommentValue = options[:gitComment]
+
+    # アプリケーションのビルド
+    build_main(
+      isRelease: isReleaseFlag,
+      flavor: flavorName,
+      isDistributeStore: isDistributeStoreFlag,
+    )
+
+    if isDistributeStoreFlag
+      # ストアへの配布
+      distribute_store(
+        isRelease: isReleaseFlag,
+        flavor: flavorName,
+      )
+    else
+      # 検証端末への配布
+      distribute_phone(
+        isRelease: isReleaseFlag,
+        flavor: flavorName,
+        gitComment: gitCommentValue,
+      )
+    end
+
+    # Slackへの通知
+    notice_slack(
+      isSuccess: true,
+      message: gitCommentValue,
+    )
+  end
+
+  desc "Build Main"
+  private_lane :build_main do |options|
+    isReleaseFlag = options[:isRelease]
+    flavorName = options[:flavor]
+    isDistributeStoreFlag = options[:isDistributeStore]
+    entryPoint = "lib/main_" + flavorName + ".dart"
+
+    if isReleaseFlag
+      buildConfig = "--release"
+    else
+      buildConfig = "--debug"
+    end
+
+    if isDistributeStoreFlag
+      outputFileType = "appbundle"
+    else
+      outputFileType = "apk"
+    end
+
+    if flavorName == "production"
+      gaTrackerIdValue = ENV["FL_GA_TRACKER_ID"]
+      googleMapApiKeyValue = ENV["FL_GOOGLE_MAP_ANDROID_API_KEY"]
+    else
+      gaTrackerIdValue = ENV["FL_GA_TRACKER_ID_DEV"]
+      googleMapApiKeyValue = ENV["FL_GOOGLE_MAP_ANDROID_API_KEY_DEV"]
+    end
+
+    gaTrackerId = "--dart-define=GA_TRACKER_ID=" + gaTrackerIdValue
+    googleMapApiKey = "--dart-define=ANDROID_GOOGLE_MAP_API_KEY=" + googleMapApiKeyValue
+    adjustAppToken = "--dart-define=ADJUST_APP_TOKEN=" + ENV["FL_ADJUST_APP_TOKEN"]
+
+    sh("flutter", "clean")
+    sh("flutter", "pub", "get")
+    sh("flutter", "analyze")
+    sh(
+      "flutter",
+      "build",
+      outputFileType,
+      buildConfig,
+      "--flavor",
+      flavorName,
+      "-t",
+      entryPoint,
+      gaTrackerId,
+      googleMapApiKey,
+      adjustAppToken,
+    )
+  end
+
+  desc "Distribute App To Phone"
+  private_lane :distribute_phone do |options|
+    isReleaseFlag = options[:isRelease]
+    flavorName = options[:flavor]
+    gitCommentValue = options[:gitComment]
+    firebaseCliToken = ENV["FL_FIREBASE_CLI_TOKEN_DEV"]
+    groups = "BTC, DXE_APP, DXE_DESIGN, DXE_QA, DXE_SPEC, HD"
+
+    if isReleaseFlag
+      buildConfig = "release"
+    else
+      buildConfig = "debug"
+    end
+
+    case flavorName
+    when "local" then
+      appId = "1:452951127823:android:855ea866ff2feaf9b4707a"
+      groups = "DXE_APP"
+    when "mock" then
+      appId = "1:452951127823:android:bbe65eadc1e3becfb4707a"
+      groups = "DXE_APP"
+    when "stg1" then
+      appId = "1:452951127823:android:95b092a09fc79015b4707a"
+    when "stg2" then
+      appId = "1:452951127823:android:f286b8bd216a2ee6b4707a"
+    when "stg3" then
+      appId = "1:452951127823:android:0226a3aedac566deb4707a"
+    when "stg4" then
+      appId = "1:452951127823:android:d6b62071f4b7a853b4707a"
+    when "stg1_inspection" then
+      appId = "1:1050895371565:android:22fb63873725630b4757a4"
+      # HDメアドで作成したFirebaseのトークンを使用する
+      firebaseCliToken = ENV["FL_FIREBASE_CLI_TOKEN"]
+    when "stg2_inspection" then
+      appId = "1:1050895371565:android:375cec7c5f7a76334757a4"
+      # HDメアドで作成したFirebaseのトークンを使用する
+      firebaseCliToken = ENV["FL_FIREBASE_CLI_TOKEN"]
+    when "stg3_inspection" then
+      appId = "1:1050895371565:android:ac6d6ed1ebae00b84757a4"
+      # HDメアドで作成したFirebaseのトークンを使用する
+      firebaseCliToken = ENV["FL_FIREBASE_CLI_TOKEN"]
+    when "stg4_inspection" then
+      appId = "1:1050895371565:android:2745ab5bfacac1bc4757a4"
+      # HDメアドで作成したFirebaseのトークンを使用する
+      firebaseCliToken = ENV["FL_FIREBASE_CLI_TOKEN"]
+    when "production" then
+      appId = "1:452951127823:android:fffaf2c487a0b205b4707a"
+      groups = "DXE_APP"
+    else
+      raise(StandardError, "不正なflavorNameです：" + flavorName)
+    end
+
+    apkPath = "../build/app/outputs/flutter-apk/app-" + flavorName + "-" + buildConfig + ".apk"
+
+    firebase_app_distribution(
+      app: appId,
+      firebase_cli_token: firebaseCliToken,
+      apk_path: apkPath,
+      groups: groups,
+      release_notes: gitCommentValue,
+    )
+  end
+
+  desc "Distribute App To Store"
+  private_lane :distribute_store do |options|
+    isReleaseFlag = options[:isRelease]
+    flavorName = options[:flavor]
+
+    if isReleaseFlag
+      buildConfig = "release"
+      buildConfigBig = "Release"
+    else
+      buildConfig = "debug"
+      buildConfigBig = "Debug"
+    end
+
+    aabPath = "../build/app/outputs/bundle/" + flavorName + buildConfigBig + "/app-" + flavorName + "-" + buildConfig + ".aab"
+
+    upload_to_play_store(
+      skip_upload_metadata: true,
+      skip_upload_changelogs: true,
+      skip_upload_screenshots: true,
+      skip_upload_images: true,
+      skip_upload_apk: true,
+      skip_upload_aab: false,
+      aab_paths: aabPath,
+      track: 'internal',
+      release_status: 'draft',
+    )
+  end
+
+  desc "Notice Slack"
+  private_lane :notice_slack do |options|
+    slackUrl = ENV["FL_SLACK_URL"]
+    isNoticeSlackValue = ENV["FL_IS_NOTICE_SLACK"]
+    isSuccessValue = options[:isSuccess]
+    messageValue = options[:message]
+
+    if isNoticeSlackValue == "true"
+      slack(
+        pretext: "【fastlane】ビルド結果(Android版)",
+        message: messageValue,
+        success: isSuccessValue,
+        slack_url: slackUrl,
+      )
+    end
+  end
+
+  error do |lane, exception|
+    notice_slack(
+      isSuccess: false,
+      message: exception.message,
+    )
+  end
+end

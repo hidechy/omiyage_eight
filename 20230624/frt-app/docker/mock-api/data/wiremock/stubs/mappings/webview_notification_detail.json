@@ -1,0 +1,18 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPath": "/sp/notification/urgent/9398/",
+    "queryParameters": {
+    }
+  },
+  "response": {
+    "status": 200,
+    "bodyFileName": "webview/notice_detail.html",
+    "headers": {
+      "Content-Type": "text/html; charset=UTF-8"
+    },
+    "transformers": [
+      "response-template"
+    ]
+  }
+}

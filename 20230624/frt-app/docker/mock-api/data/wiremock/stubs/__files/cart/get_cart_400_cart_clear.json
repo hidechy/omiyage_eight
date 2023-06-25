@@ -1,0 +1,25 @@
+{
+  "status_code": "E-00007",
+  "message": "業務ルール違反エラーが発生しました。",
+  "error_details": [
+    {
+      "error_key": null,
+      "error_reason": "便締め時間超過によるカートクリア発生",
+      "error_reason_substitute": null,
+      "error_reason_code": "3100001",
+      "error_front_message": "（フロントエラーメッセージ）"
+    }
+  ],
+  "data": null,
+  "notice_details": null,
+  "clear_cart": [
+    {
+      "ids": [
+        12345678
+      ]
+    }
+  ],
+  "total_data_num": 1,
+  "current_page_num": 1,
+  "total_page_num": 1
+}

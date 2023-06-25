@@ -1,0 +1,16 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPattern": "/orders/(\\d{1,8})/changeable_delivery_schedules"
+  },
+  "response": {
+    "status": 200,
+    "bodyFileName": "orders/get_orders_order_id_changeable_delivery_schedules_200_{{request.path.[1]}}.json",
+    "headers": {
+      "Content-Type": "application/json; charset=UTF-8"
+    },
+    "transformers": [
+      "response-template"
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+{
+    "request": {
+        "method": "GET",
+        "urlPath": "/customers/me/center",
+        "queryParameters": {}
+    },
+    "response": {
+        "status": 200,
+        "bodyFileName": "customers/me/get_customer_me_200_center.json",
+        "headers": {
+            "Content-Type": "application/json; charset=UTF-8"
+        },
+        "transformers": [
+            "response-template"
+        ]
+    }
+}

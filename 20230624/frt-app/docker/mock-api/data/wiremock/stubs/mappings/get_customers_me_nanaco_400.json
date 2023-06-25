@@ -1,0 +1,17 @@
+{
+  "priority": 2,
+  "request": {
+    "method": "GET",
+    "urlPath": "/customers/me/nanaco"
+  },
+  "response": {
+    "status": 400,
+    "bodyFileName": "customers/me/get_nanaco_400.json",
+    "headers": {
+      "Content-Type": "application/json; charset=UTF-8"
+    },
+    "transformers": [
+      "response-template"
+    ]
+  }
+}

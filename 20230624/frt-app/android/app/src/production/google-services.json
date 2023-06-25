@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "976201933417",
+    "project_id": "iy-netsuper-345408",
+    "storage_bucket": "iy-netsuper-345408.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:976201933417:android:d33bd1c439805bad2538f8",
+        "android_client_info": {
+          "package_name": "jp.itoyokado.netsuper"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "976201933417-uh5jfhd3099o1cd2mk1srlh529jl95sk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD91ze3Dg7P8To7FQcdKiulauOXQNLnbCM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "976201933417-uh5jfhd3099o1cd2mk1srlh529jl95sk.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "976201933417-n8p69kfh3ctjci9ciq5pl5kph9dfu7h3.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "jp.itoyokado.netsuper"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

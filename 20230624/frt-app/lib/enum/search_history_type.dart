@@ -1,0 +1,4 @@
+enum SearchHistoryType {
+  product,
+  address,
+}

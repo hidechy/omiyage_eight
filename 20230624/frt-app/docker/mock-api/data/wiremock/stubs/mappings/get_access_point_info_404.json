@@ -1,0 +1,16 @@
+{
+  "request" : {
+    "method": "GET",
+    "urlPath": "/settings/info/access_point_info_404.json"
+  },
+  "response": {
+    "status": 404,
+    "bodyFileName": "json/access_point_info_404.json",
+    "headers": {
+      "Content-Type": "application/json; charset=UTF-8"
+    },
+    "transformers": [
+      "response-template"
+    ]
+  }
+}

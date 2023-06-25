@@ -1,0 +1,27 @@
+{
+  "status_code": "N-00001",
+  "message": "正常終了しました。",
+  "front_message": "(フロントメッセージ)",
+  "error_details": [],
+  "data": [
+    {
+      "target": {
+        "category_level": 3,
+        "category_code": "30070",
+        "category_name": "紅茶",
+        "sort_number": 1
+      },
+      "parent": {
+        "category_level": 2,
+        "category_code": "20012",
+        "category_name": "コーヒー・紅茶",
+        "sort_number": 1
+      },
+      "children": []
+    }
+  ],
+  "total_data_num": 1,
+  "current_page_num": 1,
+  "total_page_num": 1,
+  "notice_details": []
+}

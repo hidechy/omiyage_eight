@@ -1,0 +1,93 @@
+{
+  "status_code": "N-00001",
+  "message": "正常終了しました。",
+  "front_message": "（フロントメッセージ）",
+  "error_details": [],
+  "data": [
+    {
+      "categories": [
+        {
+          "root_name": "お肉のおかず",
+          "order": 1,
+          "children": [
+            {
+              "code": "458",
+              "name": "豚肉",
+              "order": 1
+            },
+            {
+              "code": "430",
+              "name": "鶏肉",
+              "order": 2
+            },
+            {
+              "code": "821",
+              "name": "牛肉",
+              "order": 3
+            }
+          ]
+        },
+        {
+          "root_name": "野菜のおかず",
+          "order": 2,
+          "children": [
+            {
+              "code": "9655",
+              "name": "春の旬野菜",
+              "order": 1
+            },
+            {
+              "code": "9329",
+              "name": "夏の旬野菜",
+              "order": 2
+            },
+            {
+              "code": "17768",
+              "name": "秋冬の旬野菜",
+              "order": 3
+            }
+          ]
+        }
+      ],
+      "recipes": [
+        {
+          "code": "6",
+          "name": "お菓子",
+          "order": 1
+        },
+        {
+          "code": "602",
+          "name": "スープ・汁物・シチュー",
+          "order": 2
+        },
+        {
+          "code": "1343",
+          "name": "卵料理",
+          "order": 3
+        },
+        {
+          "code": "3",
+          "name": "ごはんもの",
+          "order": 4
+        },
+        {
+          "code": "10000",
+          "name": "グラタン・ドリア・ラザニア",
+          "order": 5
+        },
+        {
+          "code": "10000",
+          "name": "あああああああああああああああああああああああああ",
+          "order": 5
+        }
+      ]
+    }
+  ],
+  "total_data_num": 1,
+  "current_page_num": 1,
+  "total_page_num": 1,
+  "page_has_next": "1",
+  "page_per_size": 1,
+  "total_size": 1,
+  "notice_details": []
+}

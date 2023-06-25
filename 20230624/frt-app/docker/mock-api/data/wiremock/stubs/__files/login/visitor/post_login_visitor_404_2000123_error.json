@@ -1,0 +1,12 @@
+{
+    "request_id": "698176dc-4028-4638-a452-f00bf62a7794",
+    "status_code": "E-00006",
+    "message": "Resource does not exist.",
+    "error_details": [],
+    "data": [],
+    "notice_details": [],
+    "total_data_num": 1,
+    "current_page_num": 1,
+    "total_page_num": 1,
+    "front_message": "404（フロントメッセージ）"
+}
